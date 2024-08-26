@@ -9,17 +9,34 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#e8e8e8"/>
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="mobile.css">
+		<link rel="stylesheet" href="https://use.typekit.net/lze6fdf.css">
+		<link rel="icon" type="image/gif" sizes="32x32" href="/assets/links/about/MP.png">
+	
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script is:inline src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+			<!-- Google tag (gtag.js) -->
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-ZL76RB7TNY"></script>
+		<script is:inline>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+	
+		gtag('config', 'G-ZL76RB7TNY');
+		</script>
 		<title>{title}</title>
+		<meta name="description" content="I'm currently a Communication Design student at Politecnico of Milan, originally from Munich, Germany. Prior to my time in Milan, I spent a year in Rotterdam, exploring transformation design. My background spans branding, coding, wayfinding, and more. My passion lies in translating values into tangible artifacts for effective communication, always seeking new ideas rather than adhering to a specific style. I approach every project with a sense of humility and a genuine desire to contribute meaningfully to the diverse world of design and communication. I've had the privilege to collaborate with some design studios, and if you're interested in working with me, feel free to reach out. ">
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
+
+<script is:inline>AOS.init();</script>
 <style is:global>
 	:root {
 		--accent: 136, 58, 234;
