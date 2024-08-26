@@ -6,7 +6,10 @@ export default {
 			fontFamily: {
 				'sans': 'Oracle',
 				'slab': 'Durk',
-			  },
+			},
+			colors: {
+				'blu': '#0000FF',
+			},
 		},
 	},
 	plugins: [],
