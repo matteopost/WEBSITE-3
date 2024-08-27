@@ -10,6 +10,9 @@ export default {
 			colors: {
 				'blu': '#0000FF',
 			},
+			lineHeight: {
+				'negative': '0.94',
+			},
 		},
 	},
 	plugins: [],
