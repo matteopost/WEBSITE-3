@@ -2,14 +2,25 @@
 
 ---
 
-<div class="flex w-full fixed p-1 z-50 justify-between items-center text-white mix-blend-difference" data-aos="fade-in" data-aos-delay="200" data-aos-easing="ease-in-out">
+<!-- <div class="flex w-full fixed p-1 z-50 justify-between items-center text-white mix-blend-difference" data-aos="fade-in" data-aos-delay="200" data-aos-easing="ease-in-out">
 	<div class="cursor-pointer" onclick="scrollToTop()">Matteo Postinghel</div>
 	<a href="/" class="">About</a>
+</div> -->
+
+<div class="flex w-full fixed p-1 z-50 justify-end items-center text-white mix-blend-difference" data-aos="fade-in" data-aos-delay="200" data-aos-easing="ease-in-out">
+    <a href="/" class="cursor-pointer w-1/12 text-right" id="hoverLink" onmouseover="onHover()" onmouseout="onMouseOut()" onclick="scrollToTop()">Matteo Postinghel</a>
 </div>
 
 <script is:inline>
-
 	function scrollToTop() {
 		window.scrollTo(0,0);
+	}
+
+	function onHover() {
+		document.getElementById('hoverLink').textContent = 'About';
+	}
+
+	function onMouseOut() {
+		document.getElementById('hoverLink').textContent = 'Matteo Postinghel';
 	}
 </script>

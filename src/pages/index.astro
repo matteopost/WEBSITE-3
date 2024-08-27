@@ -6,15 +6,15 @@ import NAV1 from '../components/NAV_1.astro';
 <Layout title="Matteo Postinghel">
 	<NAV1/>
 
-	<div class="main_container relative text-left m-auto pt-8 ">
+	<div class="main_container relative text-left m-auto ">
         <div>
             <div class="project_list grid grid-row left-0 max-md: font-slab text-[10vw] leading-negative transition-opacity">
-                <div><a href="/" class="hover:text-blu tracking-normal transition-opacity">Neptuna</a></div>
-                <div><a href="/" class="hover:text-blu tracking-normal transition-opacity">Liuterie Cremonesi</a></div>
-                <div><a href="/" class="hover:text-blu tracking-normal transition-opacity">100km Studio</a></div>
-                <div><a href="/" class="hover:text-blu tracking-normal transition-opacity">Metro Milano</a></div>
-                <div><a href="/" class="hover:text-blu tracking-normal transition-opacity">Anatomia dell'Orchestra</a></div>
-                <div><a href="/" class="hover:text-blu tracking-normal transition-opacity">Essenza del Nero</a></div>
+                <div><a href="/" class="hover:text-blu tracking-normal">Neptuna</a></div>
+                <div><a href="/" class="hover:text-blu tracking-normal">Liuterie Cremonesi</a></div>
+                <div><a href="/" class="hover:text-blu tracking-normal">100km Studio</a></div>
+                <div><a href="/" class="hover:text-blu tracking-normal">Metro Milano</a></div>
+                <div><a href="/" class="hover:text-blu tracking-normal">Anatomia dell'Orchestra</a></div>
+                <div><a href="/" class="hover:text-blu tracking-normal">Essenza del Nero</a></div>
             </div>
 
         </div>
@@ -118,4 +118,9 @@ import NAV1 from '../components/NAV_1.astro';
 		/* outline: 1px solid var(--primary-color); */
 
 	}
+
+	.project_list div a {
+		transition: color 180ms, opacity 180ms;
+	}
+
 </style>
