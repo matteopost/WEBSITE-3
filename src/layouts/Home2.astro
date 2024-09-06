@@ -1,15 +1,78 @@
 ---
 import Home2Comp from "../components/Home2Comp.astro";
+
+const projects = [
+    { title: "Energyoo", 
+    link: "/", 
+    img: "/img/home/cremona_14.png", 
+    year: "2024", 
+    category: "Brand identity" },
+    
+    { title: "By.it", 
+    link: "/", 
+    img: "/img/home/cremona_14.png", 
+    year: "2024", 
+    category: "Web design" },
+    
+    { title: "Raw Scenarios", 
+    link: "/", 
+    img: "/img/home/cremona_14.png", 
+    year: "2024", 
+    category: "Web design" },
+    
+    { title: "Cinema e Fotografia", 
+    link: "/", 
+    img: "/img/home/cremona_14.png", 
+    year: "2024", 
+    category: "Editorial" },
+    
+    { title: "Neptuna", 
+    link: "/", 
+    img: "/img/home/cremona_14.png", 
+    year: "2024", 
+    category: "Speculative design" },
+    
+    { title: "Saper fare liutaio di cremona", 
+    link: "/", 
+    img: "/img/home/cremona_14.png", 
+    year: "2023", 
+    category: "Brand identity" },
+    
+    { title: "Milan Metro Map Redesign concept", 
+    link: "/", 
+    img: "/img/home/cremona_14.png", 
+    year: "2023", 
+    category: "Cartography" },
+    
+    { title: "100km studio", 
+    link: "/", 
+    img: "/img/home/cremona_14.png", 
+    year: "2023", 
+    category: "Web design" },
+    
+    { title: "anatomia dell'orchestra", 
+    link: "/", 
+    img: "/img/home/cremona_14.png", 
+    year: "2022", 
+    category: "Web design" },
+    
+    { title: "Rappresentazione dell'assenza e dell'essenza del nero", 
+    link: "/", 
+    img: "/img/home/cremona_14.png", 
+    year: "2021", 
+    category: "Editorial" }
+];
 ---
 
 <div class="pt-12 px-2">
-    <Home2Comp title="By.it" link="/" num="1" year="2024" img="/img/home/cremona_14.png" category="Web design"/>
-    <Home2Comp title="Raw Scenarios" link="/" num="2" year="2024" img="/img/home/cremona_14.png" category="Web design"/>
-    <Home2Comp title="Cinema e Fotografia" link="/" num="3" year="2024" img="/img/home/cremona_14.png" category="Editorial"/>
-    <Home2Comp title="Neptuna" link="/" num="4" year="2024" img="/img/home/cremona_14.png" category="Speculative design"/>
-    <Home2Comp title="Saper fare liutaio di cremona" link="/" num="5" year="2024" img="/img/home/cremona_14.png" category="Identity design"/>
-    <Home2Comp title="Milan Metro Map Redesign concept" link="/" num="6" year="2024" img="/img/home/cremona_14.png" category="Cartography"/>
-    <Home2Comp title="100km studio" link="/" num="7" year="2024" img="/img/home/cremona_14.png" category="Web design"/>
-    <Home2Comp title="anatomia dell'orchestra" link="/" num="8" year="2024" img="/img/home/cremona_14.png" category="Web design"/>
-    <Home2Comp title="Rappresentazione dell'assenza e dell'essenza del nero" link="/" num="9" year="2024" img="/img/home/cremona_14.png" category="Editorial"/>
+    {projects.map((project, index) => (
+        <Home2Comp 
+            title={project.title} 
+            link={project.link} 
+            num={(index + 1).toString()} 
+            year={project.year} 
+            img={project.img} 
+            category={project.category} 
+        />
+    ))}
 </div>
