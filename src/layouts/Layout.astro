@@ -41,6 +41,7 @@ const { title } = Astro.props;
 
 	*{
 		/* border: 1px solid red; */
+		@apply leading-tight
 		
 	}
 
@@ -49,7 +50,7 @@ const { title } = Astro.props;
 	}
 
 	body{
-		@apply text-xs sm:text-sm lg:text-base
+		@apply text-sm lg:text-base
 	}
 
 	@font-face {
