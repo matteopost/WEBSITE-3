@@ -2,7 +2,7 @@
 import Home2Comp from "../components/Home2Comp.astro";
 
 const projects = [
-    { title: "Energyoo", 
+{ title: "Energyoo", 
     link: "/", 
     img: "/img/home/cremona_14.png", 
     year: "2024", 
@@ -60,11 +60,13 @@ const projects = [
     link: "/", 
     img: "/img/home/cremona_14.png", 
     year: "2021", 
-    category: "Editorial" }
+    category: "Editorial" },
+    
+    
 ];
 ---
 
-<div class="pt-12 px-2">
+<div class="pt-12 sm:pt-24 px-2">
     {projects.map((project, index) => (
         <Home2Comp 
             title={project.title} 
@@ -73,6 +75,7 @@ const projects = [
             year={project.year} 
             img={project.img} 
             category={project.category} 
+            delay={((index * 50) + 50).toString()} 
         />
     ))}
 </div>
