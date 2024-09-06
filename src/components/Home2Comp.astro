@@ -1,0 +1,58 @@
+---
+interface Props {
+    title: string;
+    num: string;
+    year: string;
+    img: string;
+    category: string;
+    link: string;
+}
+
+const { title, num, year, img, category, link } = Astro.props;
+---
+
+<div class="grid grid-cols-2 gap-2 leading-tight home2comp">
+    <div class="grid grid-cols-6 gap-2 info">
+        <p class="col-span-1 transition-opacity duration-100">[{num}]</p>
+        <div class="col-span-3">
+            <a href={link} class="uppercase transition-opacity duration-100 link">
+                {title}
+            </a>
+        </div>
+
+        <div class="col-span-2 flex justify-between">
+            <p class="transition-opacity duration-100">{category}</p>
+            <p class="transition-opacity duration-100">{year}</p>
+        </div>
+    </div>
+    <div>
+        <img src={img} alt={img} class="w-1/2 ml-auto transition-all duration-100 p-1  " />
+        <!-- <div class="realtive w-1/2 ml-auto">
+            <img src={img} alt={img} class="absolute w-1/4 transition-all duration-100 hidden p-1 img " />
+        </div> -->
+    </div>
+</div>
+
+<script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+        const components = document.querySelectorAll('.home2comp');
+
+        components.forEach(component => {
+            const linkElement = component.querySelector('.link');
+            const infoElement = component.querySelector('.info');
+            const imgElement = component.querySelector('.img');
+
+            linkElement.addEventListener('mouseenter', () => {
+                infoElement.classList.add('opacity-50');
+                imgElement.classList.remove('hidden');
+                imgElement.classList.add('block');
+            });
+
+            linkElement.addEventListener('mouseleave', () => {
+                infoElement.classList.remove('opacity-50');
+                imgElement.classList.remove('block');
+                imgElement.classList.add('hidden');
+            });
+        });
+    });
+</script>

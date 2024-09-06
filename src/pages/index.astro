@@ -1,126 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import NAV1 from '../components/NAV_1.astro';
+import Home1 from '../layouts/Home1.astro';
+import Home2 from '../layouts/Home2.astro';
 ---
 
 <Layout title="Matteo Postinghel">
 	<NAV1/>
+	<!-- <Home1/> -->
+	<Home2/>
 
-	<div class="main_container relative text-left m-auto ">
-        <div>
-            <div class="project_list grid grid-row left-0 max-md: font-slab text-[10vw] leading-negative transition-opacity">
-                <div><a href="/" class="hover:text-blu tracking-normal">Neptuna</a></div>
-                <div><a href="/" class="hover:text-blu tracking-normal">Liuterie Cremonesi</a></div>
-                <div><a href="/" class="hover:text-blu tracking-normal">100km Studio</a></div>
-                <div><a href="/" class="hover:text-blu tracking-normal">Metro Milano</a></div>
-                <div><a href="/" class="hover:text-blu tracking-normal">Anatomia dell'Orchestra</a></div>
-                <div><a href="/" class="hover:text-blu tracking-normal">Essenza del Nero</a></div>
-            </div>
-
-        </div>
-		<div class="">
-			<img class="image_home" src="/img/home/cremona_14.png" alt="neptuna_1">
-			<img class="image_home" src="/img/home/cremona_14.png" alt="GRUPPO 5 - Saper fare liutaio di cremona - fotografie_3.jpg">
-			<img class="image_home" src="/img/home/cremona_14.png" alt="100km_1">
-			<img class="image_home" src="/img/home/cremona_14.png" alt="mappa milano">
-			<img class="image_home" src="/img/home/cremona_14.png" alt="orchestra">
-			<img class="image_home" src="/img/home/cremona_14.png" alt="nero-1">
-		</div>
-    </div>
+	
 
 
 </Layout>
 
-<script is:inline>
-	if (window.innerWidth > 478) {
-		const textLinks = document.querySelectorAll('.project_list div a');
-		const images = document.querySelectorAll('.image_home');
-		
-		textLinks.forEach((link, index) => {
-			link.addEventListener("mouseover", () => {
-				console.log("mouseover");
-				images[index].classList.add("show");
-				textLinks[index].classList.add("z-index-text");
-
-				link.style.opacity = 1;
-				
-				textLinks.forEach((otherLink, otherIndex) => {
-					if (otherIndex !== index) {
-						otherLink.style.opacity = 0.7;
-					}
-				});
-			});
-
-			link.addEventListener("mouseout", () => {
-				console.log("mouseout");
-				images[index].classList.remove("show");
-				textLinks[index].classList.remove("z-index-text");
-			
-				textLinks.forEach((otherLink) => {
-					otherLink.style.opacity = 1;
-				});
-			});
-		});
-	}
-
-	if (window.innerWidth < 478) {
-		function handleScroll() {
-			const textLinks = document.querySelectorAll('.project_list div a');
-			const images = document.querySelectorAll('.image_home');
-			
-			let enter = 33 / 100 * window.innerHeight;
-			let escher = 66 / 100 * window.innerHeight;
-			
-			for (let i = 0; i < textLinks.length; i++) {
-				let y = textLinks[i].getBoundingClientRect().y + textLinks[i].getBoundingClientRect().height / 2;
-
-				if (y > enter && y < escher) {
-					textLinks[i].classList.add("selected");
-					textLinks[i].classList.add("z-index-text");
-					images[i].classList.add("show");
-				} else {
-					textLinks[i].classList.remove("selected");
-					textLinks[i].classList.remove("z-index-text");
-					images[i].classList.remove("show");
-				}
-			}
-		}
-
-		window.addEventListener("scroll", handleScroll);
-	}
-
-</script>
-
-<style>
-	.show{
-		visibility: initial;
-		z-index: 18 ;
-	}
-
-	.z-index-text{
-		z-index: 20;
-	}
-
-	.image_home {
-		margin: auto;
-		transform: translate(-50%, -50%);
-		position: fixed;
-		visibility: hidden;
-		pointer-events: none;
-		z-index: -2;
-		left: 50%;
-		top: 50%;
-		height: auto;
-		width: auto;
-		width: min(50vw, 1000px);
-		box-shadow: 0px 0px 60px #00000050;
-		transition: 500ms;
-		/* outline: 1px solid var(--primary-color); */
-
-	}
-
-	.project_list div a {
-		transition: color 180ms, opacity 180ms;
-	}
-
-</style>
