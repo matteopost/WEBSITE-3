@@ -4,10 +4,10 @@
 
 <div class="flex w-full fixed p-2 z-50 justify-between items-center text-white mix-blend-difference" data-aos="fade-in" data-aos-delay="200" data-aos-easing="ease-in-out">
 	<div class="cursor-pointer hover:opacity-40" onclick="scrollToTop()">Matteo Postinghel</div>
-	<a href="/" class=" hover:opacity-40">About</a>
+	<a href="/" id="toggleAbout" class=" hover:opacity-40">About</a>
 </div>
 
-<div id="about" class="flex flex-col max-w-2xl sm:w-1/2 p-2 pt-12">
+<div id="about" class="hidden flex-col max-w-2xl sm:w-1/2 p-2 pt-12">
 	<p>Nice to meet you!
 		<br>
 		<br>
@@ -51,4 +51,14 @@
 	function onMouseOut() {
 		document.getElementById('hoverLink').textContent = 'Matteo Postinghel';
 	}
+
+	function toggleAbout() {
+		const aboutSection = document.getElementById('about');
+		aboutSection.classList.toggle('hidden');
+	}
+
+	document.getElementById('toggleAbout').addEventListener('click', function(e) {
+		e.preventDefault(); 
+		toggleAbout();
+	});
 </script>
