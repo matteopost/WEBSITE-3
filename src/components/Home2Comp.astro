@@ -33,8 +33,8 @@ const { title, num, year, img, category, link } = Astro.props;
     </div>
 </div> -->
 
-<div class="grid grid-cols-1 leading-tight group max-sm:py-2">
-    <div class="grid grid-cols-2 sm:grid-cols-12 sm:gap-2 info">
+<div class="group">
+    <div class="grid grid-cols-2 sm:grid-cols-12 sm:gap-2 info leading-tight max-sm:py-2">
         <p class="col-span-1 ">[{num}]</p>
         <div class="col-span-1 sm:col-span-8">
             <a href={link} class="uppercase  link">
@@ -45,13 +45,6 @@ const { title, num, year, img, category, link } = Astro.props;
         <p class="col-span-1 sm:col-span-2 ">{category}</p>
         <div class="col-span-1 sm:hidden"></div>
         <p class="col-span-1  sm:justify-self-end">{year}</p>
-    </div>
-
-    <div>
-        <!-- <img src={img} alt={img} class="w-1/3 sm:w-1/2 sm:ml-auto transition-all duration-100 info " /> -->
-        <!-- <div class="realtive w-1/2 ml-auto">
-            <img src={img} alt={img} class="absolute w-1/4 transition-all duration-100 hidden p-1 img " />
-        </div> -->
     </div>
 </div>
 
