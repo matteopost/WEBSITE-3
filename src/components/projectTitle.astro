@@ -1,0 +1,36 @@
+---
+
+interface Props {
+    itTitle: string;
+    enTitle: string;
+    num: string;
+    year: string;
+    img: string;
+    itCategory: string;
+    enCategory: string;
+    link: string;
+
+}
+
+const { itTitle, enTitle, num, year, img, itCategory, enCategory, link,  } = Astro.props;
+---
+
+
+<div class="group p-2">
+    <div class="grid grid-cols-2 sm:grid-cols-12 sm:gap-2 info leading-tight max-sm:py-2">
+        <p class="col-span-1 ">[{num}]</p>
+        <div class="col-span-1 sm:col-span-8">
+            <a href={link} class="it uppercase link">
+                {itTitle}
+            </a>
+            <a href={link} class="en uppercase link">
+                {enTitle}
+            </a>
+        </div>
+        <div class="col-span-1 sm:hidden"></div>
+        <p class="it col-span-1 sm:col-span-2 ">{itCategory}</p>
+        <p class="en col-span-1 sm:col-span-2 ">{enCategory}</p>
+        <div class="col-span-1 sm:hidden"></div>
+        <p class="col-span-1  sm:justify-self-end">{year}</p>
+    </div>
+</div>
