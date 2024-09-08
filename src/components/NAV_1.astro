@@ -2,8 +2,8 @@
 
 ---
 
-<div class="flex w-full fixed p-2 z-50 justify-between items-center text-white mix-blend-difference" data-aos="fade-in" data-aos-delay="200" data-aos-easing="ease-in-out">
-	<div id="toggleAbout" class="cursor-pointer hover:opacity-40" onclick="scrollToTop()">Matteo Postinghel</div>
+<div class="flex w-full fixed px-2 pt-2 z-50 justify-between items-center text-white mix-blend-difference" data-aos="fade-in" data-aos-delay="200" data-aos-easing="ease-in-out">
+	<div id="toggleAbout" class="cursor-pointer hover:opacity-40">Matteo Postinghel</div>
 	<div class="flex justify-between w-1/2 sm:w-3/12">
 		<div class="flex items-center">
 			<p class="cursor-pointer it-button" data-lang="it">IT</p>
@@ -18,9 +18,27 @@
 </div>
 
 
-<div  class="flex max-sm:flex-col justify-between p-2 pt-11">
-	<div id="about" class="hidden max-w-2xl sm:w-1/2 max-sm:pb-5">
-		<p>Nice to meet you!
+<div  class="flex max-sm:flex-col justify-between px-2 pt-2 ">
+	<div id="about" class="hidden max-w-2xl sm:w-1/2 text-white mix-blend-difference z-40">
+		<p class="it">
+			<br>
+			<br>
+			Piacere!
+			<br>
+			<br>
+			Attualmente sono uno studente di Design della Comunicazione al Politecnico di Milano, originario di Monaco, Germania. Prima di trasferirmi a Milano, ho trascorso un anno a Rotterdam esplorando il design della trasformazione. Il mio background spazia dal branding, al coding, alla segnaletica, e altro ancora.
+			<br>
+			<br>
+			La mia passione risiede nel tradurre i valori in artefatti tangibili per una comunicazione efficace, cercando sempre nuove idee piuttosto che aderire a uno stile specifico.
+			<br>
+			<br>
+			Affronto ogni progetto con umiltà e con il sincero desiderio di contribuire in modo significativo al variegato mondo del design e della comunicazione. Ho avuto il privilegio di collaborare con alcuni studi di design e, se sei interessato a lavorare con me, non esitare a contattarmi.
+		</p>
+		
+		<p class="en">
+			<br>
+			<br>
+			Nice to meet you!
 			<br>
 			<br>
 			I'm currently a Communication Design student at Politecnico of Milan, originally from Munich, Germany. Prior to my time in Milan, I spent a year in Rotterdam, exploring transformation design. My background spans branding, coding, wayfinding, and more.
@@ -32,7 +50,9 @@
 			I approach every project with a sense of humility and a genuine desire to contribute meaningfully to the diverse world of design and communication. I've had the privilege to collaborate with some design studios, and if you're interested in working with me, feel free to reach out.	
 		</p>
 	</div>
-	<div id="contact" class="hidden sm:text-right sm:ml-auto">
+	<div id="contact" class="hidden sm:text-right sm:ml-auto pt-2 text-white mix-blend-difference z-40">
+		<br>
+		<br>
 		<div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40">Email</a></div>
 		<div><a href="https://www.linkedin.com/in/matteo-postinghel/" class="hover:opacity-40" target="_blank">LinkedIn</a></div>
 		<div><a href="https://www.instagram.com/matteo.post/" class="hover:opacity-40" target="_blank">Instagram</a></div>
@@ -78,9 +98,6 @@
 
 
 <script is:inline>
-    function scrollToTop() {
-        window.scrollTo(0, 0);
-    }
 
     function onHover() {
         document.getElementById('hoverLink').textContent = 'About';
