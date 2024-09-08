@@ -2,65 +2,85 @@
 import Home2Comp from "../components/Home2Comp.astro";
 
 const projects = [
-{ title: "Energyoo", 
+    { itTitle: "Energyoo",
+    enTitle: "Energyoo", 
     link: "/", 
     img: "/img/home/cremona_14.png", 
     year: "2024", 
-    category: "Brand identity" },
+    enCategory: "Identità visiva",
+    itCategory: "Brand identity" },
     
-    { title: "By.it", 
+    { itTitle: "By.it", 
+    enTitle: "By.it", 
     link: "/", 
     img: "/img/home/cremona_14.png", 
     year: "2024", 
-    category: "Web design" },
+    enCategory: "Web design",
+    itCategory: "Web design" },
     
-    { title: "Raw Scenarios", 
+    { itTitle: "Raw Scenarios",
+    enTitle: "Raw Scenarios",
     link: "/", 
     img: "/img/home/cremona_14.png", 
     year: "2024", 
-    category: "Web design" },
+    enCategory: "Web design",
+    itCategory: "Web design" },
     
-    { title: "Cinema e Fotografia", 
+    { itTitle: "Cinema e Fotografia", 
+    enTitle: "Cinema and fotography", 
     link: "/", 
     img: "/img/home/cremona_14.png", 
     year: "2024", 
-    category: "Editorial" },
+    enCategory: "Editoria",
+    itCategory: "Editorial" },
     
-    { title: "Neptuna", 
+    { itTitle: "Neptuna", 
+    enTitle: "Neptuna",
     link: "/", 
     img: "/img/home/cremona_14.png", 
     year: "2024", 
-    category: "Speculative design" },
+    enCategory: "Design speculativo",
+    itCategory: "Speculative design " },
     
-    { title: "Saper fare liutaio di cremona", 
+    { itTitle: "Saper fare liutaio di cremona", 
+    enTitle: "Cremona luthier", 
     link: "/", 
     img: "/img/home/cremona_14.png", 
     year: "2023", 
-    category: "Brand identity" },
+    enCategory: "Identità visiva",
+    itCategory: "Brand identity" },
     
-    { title: "Milan Metro Map Redesign concept", 
+    { itTitle: "Concetto di redesign della mappa della metropolitana di Milano", 
+    enTitle: "Milan Metro Map Redesign concept", 
     link: "/", 
     img: "/img/home/cremona_14.png", 
     year: "2023", 
-    category: "Cartography" },
+    enCategory: "Cartografia",
+    itCategory: "Cartography" },
     
-    { title: "100km studio", 
+    { itTitle: "100km studio", 
+    enTitle: "100km studio", 
     link: "/", 
     img: "/img/home/cremona_14.png", 
     year: "2023", 
-    category: "Web design" },
+    enCategory: "Web design",
+    itCategory: "Web design" },
     
-    { title: "anatomia dell'orchestra", 
+    { itTitle: "anatomia dell'orchestra", 
+    enTitle: "anatomy of the orchestra", 
     link: "/", 
     img: "/img/home/cremona_14.png", 
     year: "2022", 
-    category: "Web design" },
+    enCategory: "Web design",
+    itCategory: "Web design" },
     
-    { title: "Rappresentazione dell'assenza e dell'essenza del nero", 
+    { itTitle: "Rappresentazione dell'assenza e dell'essenza del nero",
+    enTitle: "Representation of the absence and essence of blackness", 
     link: "/", 
     img: "/img/home/cremona_14.png", 
     year: "2021", 
-    category: "Editorial" },
+    enCategory: "Editoria",
+    itCategory: "Editorial" },
     
     
 ];
@@ -69,12 +89,14 @@ const projects = [
 <div class="sm:fixed sm:bottom-2 max-sm:pt-12 px-2 sm:w-full">
     {projects.map((project, index) => (
         <Home2Comp 
-            title={project.title} 
+            itTitle={project.itTitle} 
+            enTitle={project.enTitle} 
             link={project.link} 
             num={(index + 1).toString()} 
             year={project.year} 
             img={project.img} 
-            category={project.category} 
+            enCategory={project.enCategory} 
+            itCategory={project.itCategory} 
         />
     ))}
 </div>
