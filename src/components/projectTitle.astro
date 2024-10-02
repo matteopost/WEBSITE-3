@@ -1,5 +1,4 @@
 ---
-
 interface Props {
     itTitle: string;
     enTitle: string;
@@ -7,17 +6,13 @@ interface Props {
     year: string;
     itCategory: string;
     enCategory: string;
-    itDescription: string;
-    enDescription: string;
-    link: string;
-    linkTitle: string;
+
 }
 
-const { itTitle, enTitle, num, year, itCategory, enCategory, itDescription, enDescription, link, linkTitle  } = Astro.props;
+const { itTitle, enTitle, num, year, itCategory, enCategory,} = Astro.props;
 ---
 
-
-<!-- <div class="px-2 pt-12">
+<div class="fixed bottom-0 p-2 w-full">
     <div class="grid grid-cols-2 sm:grid-cols-12 leading-tight max-sm:py-2">
         <p class="col-span-1 ">[{num}]</p>
         <div class="col-span-1 sm:col-span-8">
@@ -34,30 +29,6 @@ const { itTitle, enTitle, num, year, itCategory, enCategory, itDescription, enDe
         <div class="col-span-1 sm:hidden"></div>
         <p class="col-span-1  sm:justify-self-end">{year}</p>
     </div>
-
-    <div class="grid grid-cols-2 sm:grid-cols-12 leading-tight max-sm:py-2">
-        <div class="max-sm:hidden col-span-1"></div>
-        <div class="col-span-2 sm:col-span-5">
-            <p class="it max-w-2xl">
-                <br>
-                {itDescription}
-            </p>
-            <p class="en max-w-2xl">
-                <br>
-                {enDescription}
-            </p>
-            <a href={link} class="max-w-2xl">
-                <br>
-                {linkTitle}
-            </a>
-
-
-        </div>
-    </div>
-</div> -->
-
-<div class="px-2 pt-12">
-    <div class="grid grid-cols-12">
-        
-    </div>
 </div>
+
+
