@@ -1,22 +1,27 @@
 {
 	"index": {
-		"title": "Matteo Postinghel"
+	  "title": "Matteo Postinghel"
 	},
 	"nav": {
-		"about": "Hallo, ich bin Matteo, schön, dich kennenzulernen! Derzeit studiere ich Kommunikationsdesign an der Politecnico di Milano und komme ursprünglich aus München, Deutschland. Vor meiner Zeit in Mailand habe ich ein Jahr in Rotterdam verbracht und mich mit Transformationsdesign beschäftigt. Mein Hintergrund umfasst Branding, Coding, Leitsysteme und mehr. Meine Leidenschaft liegt darin, Werte in greifbare Artefakte zu übersetzen, um effektive Kommunikation zu ermöglichen, und ich suche stets nach neuen Ideen, anstatt einem bestimmten Stil zu folgen. Ich gehe jedes Projekt mit Bescheidenheit und einem echten Wunsch an, einen sinnvollen Beitrag zur vielfältigen Welt des Designs und der Kommunikation zu leisten. Ich hatte das Privileg, mit einigen Designstudios zusammenzuarbeiten. Wenn du daran interessiert bist, mit mir zu arbeiten, melde dich gerne.",
-		"contact": "Kontakt"
+	  "year": "Alter: 23",
+	  "from": "Herkunft: München, Deutschland",
+	  "location": "Standort: Mailand, Italien",
+	  "profession": "Beruf: Kommunikationsdesigner",
+	  "currently": "Derzeit: Master in Kommunikationsdesign, Politecnico di Milano - Propp Studio",
+	  "contact": "Kontakt",
+	  "cookie": "Durch das Browsen auf dieser Website akzeptieren Sie automatisch Cookies."
 	},
 	"projects": [
-		{ "Title": "Energyoo", "Category": "Visuelle Identität", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "By.it", "Category": "Webdesign", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Raw Scenarios", "Category": "Webdesign", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Kino und Fotografie", "Category": "Verlag", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Neptuna", "Category": "Spekulatives Design", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Cremona Geigenbauer", "Category": "Visuelle Identität", "year": "2023", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Mailänder U-Bahn-Karte", "Category": "Kartographie", "year": "2023", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "100km Studio", "Category": "Webdesign", "year": "2023", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Anatomie des Orchesters", "Category": "Webdesign", "year": "2022", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Darstellung von Abwesenheit und Essenz von Schwarzem", "Category": "Verlag", "year": "2021", "link": "/neptuna", "img": "/img/home/cremona_14.png" }
+	  { "Title": "Energyoo", "Category": "Visuelle Identität", "year": "2024"},
+	  { "Title": "By.it", "Category": "Webdesign", "year": "2024"},
+	  { "Title": "Raw Scenarios", "Category": "Webdesign", "year": "2024"},
+	  { "Title": "Kino und Fotografie", "Category": "Verlag", "year": "2024"},
+	  { "Title": "Neptuna", "Category": "Spekulatives Design", "year": "2024"},
+	  { "Title": "Cremona Geigenbauer", "Category": "Visuelle Identität", "year": "2023"},
+	  { "Title": "Mailänder U-Bahn-Karte", "Category": "Kartographie", "year": "2023"},
+	  { "Title": "100km Studio", "Category": "Webdesign", "year": "2023"},
+	  { "Title": "Anatomie des Orchesters", "Category": "Webdesign", "year": "2022"},
+	  { "Title": "Darstellung von Abwesenheit und Essenz von Schwarzem", "Category": "Verlag", "year": "2021"}
 	]
-	  
-}
+  }
+  

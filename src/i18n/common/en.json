@@ -1,23 +1,27 @@
 {
 	"index": {
-		"title": "Matteo Postinghel"
+	  "title": "Matteo Postinghel"
 	},
 	"nav": {
-		"about": "Hi, I am Matteo, nice to meet you! I'm currently a Communication Design student at Politecnico of Milan, originally from Munich, Germany. Prior to my time in Milan, I spent a year in Rotterdam, exploring transformation design. My background spans branding, coding, wayfinding, and more. My passion lies in translating values into tangible artifacts for effective communication, always seeking new ideas rather than adhering to a specific style. I approach every project with a sense of humility and a genuine desire to contribute meaningfully to the diverse world of design and communication. I've had the privilege to collaborate with some design studios, and if you're interested in working with me, feel free to reach out.",
-		"contact": "Contact"
+	  "year": "Years: 23",
+	  "from": "From: Munich, Germany",
+	  "location": "Location: Milan, Italy",
+	  "profession": "Profession: Communication Designer",
+	  "currently": "Currently: MA Communication Design, Politecnico di Milano - Propp Studio",
+	  "contact": "Contact",
+	  "cookie": "By browsing this site, you automatically accept cookies."
 	},
-
 	"projects": [
-		{ "Title": "Energyoo", "Category": "Visual Identity", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "By.it", "Category": "Web Design", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Raw Scenarios", "Category": "Web Design", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Cinema and Photography", "Category": "Publishing", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Neptuna", "Category": "Speculative Design", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Cremona Luthier", "Category": "Visual Identity", "year": "2023", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Milan Metro Map", "Category": "Cartography", "year": "2023", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "100km Studio", "Category": "Web Design", "year": "2023", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Anatomy of the Orchestra", "Category": "Web Design", "year": "2022", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
-		{ "Title": "Representation of the Absence and Essence of Blackness", "Category": "Publishing", "year": "2021", "link": "/neptuna", "img": "/img/home/cremona_14.png" }
+	  { "Title": "Energyoo", "Category": "Visual Identity", "year": "2024"},
+	  { "Title": "By.it", "Category": "Web Design", "year": "2024"},
+	  { "Title": "Raw Scenarios", "Category": "Web Design", "year": "2024"},
+	  { "Title": "Cinema and Photography", "Category": "Publishing", "year": "2024"},
+	  { "Title": "Neptuna", "Category": "Speculative Design", "year": "2024"},
+	  { "Title": "Cremona Luthier", "Category": "Visual Identity", "year": "2023"},
+	  { "Title": "Milan Metro Map", "Category": "Cartography", "year": "2023"},
+	  { "Title": "100km Studio", "Category": "Web Design", "year": "2023"},
+	  { "Title": "Anatomy of the Orchestra", "Category": "Web Design", "year": "2022"},
+	  { "Title": "Representation of the Absence and Essence of Blackness", "Category": "Publishing", "year": "2021"}
 	]
-	  
-}
+  }
+  
