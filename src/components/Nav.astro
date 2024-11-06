@@ -2,36 +2,66 @@
 import LanguageSwitcher from "./LanguageSwitcher.astro";
 import { astroI18n, t } from "astro-i18n";
 astroI18n.locale;
+
+
+const birthDate = new Date(2000, 11, 4); 
+const today = new Date();
+let age = today.getFullYear() - birthDate.getFullYear();
+const isBeforeBirthdayThisYear = today.getMonth() < birthDate.getMonth() || 
+    (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate());
+if (isBeforeBirthdayThisYear) {
+    age--; 
+}
 ---
 
-<div class="grid grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference">
-    <div x-data="{ showAbout: false }" class="col-span-9">
-        <div @click="showAbout = !showAbout" class="cursor-pointer hover:opacity-40">Matteo Postinghel</div>
+<div class="grid grid-cols-4 sm:grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference">
+    <div x-data="{ showAbout: false }" class="col-span-2 sm:col-span-9 pr-2">
+        <div>
+           <a @click="showAbout = !showAbout" class="cursor-pointer hover:opacity-40">Matteo Postinghel</a> 
+        </div>
         <div x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="max-w-screen-lg">
-            <p>{t("nav.year")}</p> <br>
-            <p>{t("nav.from")}</p> <br>
-            <p>{t("nav.location")}</p> <br>
-            <p>{t("nav.profession")}</p> <br>
-            <p>{t("nav.currently")}</p> <br>
+            <p>{t("nav.year")} {age}</p>
+            <p>{t("nav.from")}</p>
+            <p>{t("nav.location")}</p>
+            <p>{t("nav.profession")}</p>
+            <p>{t("nav.currently")}</p>
+            <div class="sm:hidden">
+                <br>
+                <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40">Email</a></div>
+                <div><a href="https://www.linkedin.com/in/matteo-postinghel/" class="hover:opacity-40" target="_blank">LinkedIn</a></div>
+                <div><a href="https://www.instagram.com/matteo.post/" class="hover:opacity-40" target="_blank">Instagram</a></div>
+                <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40">Curriculum</a></div>
+            </div>
         </div>
 
-        <div x-data="{ showCookie: true }" class=" text-white mix-blend-difference mt-4">
-            <div x-show="showCookie" x-cloak x-transition.opacity.duration.150ms>
+        <div 
+            x-data="{ showCookie: localStorage.getItem('cookieAccepted') !== 'true' }" 
+            class="text-white mix-blend-difference mt-4">
+            
+            <div 
+                x-show="showCookie" 
+                x-cloak 
+                x-transition.opacity.duration.150ms 
+                class="max-w-72">
+                
                 <p>{t("nav.cookie")}</p>
-                <button @click="showCookie = false" class="rotate-45 transform cursor-pointer hover:opacity-40 transition-opacity">+</button>
+                <button 
+                    @click="showCookie = false; localStorage.setItem('cookieAccepted', 'true')" 
+                    class="rotate-45 transform cursor-pointer hover:opacity-40 transition-opacity">+</button>
             </div>
         </div>
     </div>
 
-    <div class="col-span-2 flex items-center text-white mix-blend-difference relative">
+
+    <div class="col-span-1 sm:col-span-2 flex items-center text-white mix-blend-difference relative">
         <LanguageSwitcher />
     </div>
 
-    <div x-data="{ showContact: false }" class="justify-end">
-        <div @click="showContact = !showContact" class="cursor-pointer text-right">
-            <p class="justify-self-end hover:opacity-40">{t("nav.contact")}</p>
+    <div x-data="{ showContact: false }" class="justify-end max-sm:hidden">
+        <div class="text-right">
+            <p @click="showContact = !showContact" class="justify-self-end hover:opacity-40 cursor-pointer">{t("nav.contact")}</p>
         </div>
-        <div x-show="showContact" x-cloak x-transition.opacity.duration.100ms class="sm:text-right sm:ml-auto pt-3 text-white mix-blend-difference z-40">
+        <div x-show="showContact" x-cloak x-transition.opacity.duration.100ms class="sm:text-right sm:ml-auto text-white mix-blend-difference z-40">
             <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40">Email</a></div>
             <div><a href="https://www.linkedin.com/in/matteo-postinghel/" class="hover:opacity-40" target="_blank">LinkedIn</a></div>
             <div><a href="https://www.instagram.com/matteo.post/" class="hover:opacity-40" target="_blank">Instagram</a></div>

@@ -3,7 +3,7 @@
 	  "title": "Matteo Postinghel"
 	},
 	"nav": {
-	  "year": "Anni: 23",
+	  "year": "Anni:",
 	  "from": "Da: Monaco, Germania",
 	  "location": "Luogo: Milano, Italia",
 	  "profession": "Professione: Designer della comunicazione",
@@ -23,5 +23,4 @@
 	  { "Title": "Anatomia dell'Orchestra", "Category": "Web Design", "year": "2022"},
 	  { "Title": "Rappresentazione dell'Assenza e dell'Essenza della Nerezza", "Category": "Editoria", "year": "2021"}
 	]
-  }
-  
+}
