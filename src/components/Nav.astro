@@ -17,7 +17,7 @@ if (isBeforeBirthdayThisYear) {
 <div class="grid grid-cols-4 sm:grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference" >
     <div x-data="{ showAbout: false }" class="col-span-2 sm:col-span-9 pr-2">
         <div>
-           <a @click="showAbout = !showAbout" class="cursor-pointer hover:opacity-40">Matteo Postinghel</a> 
+           <a @click="showAbout = !showAbout" class="cursor-pointer sm:hover:opacity-40">Matteo Postinghel</a> 
         </div>
         <div x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="max-w-screen-lg">
             <p>{t("nav.year")} {age}</p>
@@ -34,7 +34,7 @@ if (isBeforeBirthdayThisYear) {
             </div>
         </div>
 
-        
+
         <div 
             x-data="{ showCookie: localStorage.getItem('cookieAccepted') !== 'true' }" 
             class="text-white mix-blend-difference mt-4">
