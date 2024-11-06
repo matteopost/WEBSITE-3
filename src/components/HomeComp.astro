@@ -7,7 +7,7 @@ interface Props {
     year: string;
     Category: string;
     link: string;
-    images?: string[]; 
+    images?: ImageMetadata[]; 
 }
 
 
@@ -29,14 +29,15 @@ const { Title, num, year, Category, link, images = [] } = Astro.props;
         <p class="col-span-1 sm:justify-self-end">{year}</p>
     </div>
 
-    <div x-show="openGallery" x-cloak x-transition.opacity.duration.200ms class="sm:hidden flex overflow-x-auto space-x-2 no-scrollbar">
+    <div x-show="openGallery" x-cloak x-transition.opacity.duration.200ms class=" flex overflow-x-auto space-x-2 no-scrollbar">
         {images?.map((img, index) => (
             <Image 
                 src={img} 
                 alt={`Image ${index + 1}`} 
-                width={600} 
-                height={600} 
-                class="aspect-video object-cover w-3/4" 
+                width={1080} 
+                height={1080} 
+                format='webp'
+                class="aspect-video object-cover w-[calc(75%-8px)]" 
             />
         ))}
     </div>
