@@ -14,7 +14,7 @@ if (isBeforeBirthdayThisYear) {
 }
 ---
 
-<div class="grid grid-cols-4 sm:grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference">
+<div class="grid grid-cols-4 sm:grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference" >
     <div x-data="{ showAbout: false }" class="col-span-2 sm:col-span-9 pr-2">
         <div>
            <a @click="showAbout = !showAbout" class="cursor-pointer hover:opacity-40">Matteo Postinghel</a> 
@@ -54,7 +54,8 @@ if (isBeforeBirthdayThisYear) {
 
 
     <div class="col-span-1 sm:col-span-2 flex items-center text-white mix-blend-difference relative">
-        <LanguageSwitcher />
+        <LanguageSwitcher showCurrent={true} labels={{ en: "EN", it: "IT" }} />
+
     </div>
 
     <div x-data="{ showContact: false }" class="justify-end max-sm:hidden">
