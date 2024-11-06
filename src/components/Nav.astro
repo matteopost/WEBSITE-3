@@ -14,7 +14,7 @@ if (isBeforeBirthdayThisYear) {
 }
 ---
 
-<div class="grid grid-cols-4 sm:grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference" >
+<div class="grid grid-cols-4 sm:grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference" transition:persist >
     <div x-data="{ showAbout: false }" class="col-span-2 sm:col-span-9 pr-2">
         <div>
            <a @click="showAbout = !showAbout" class="cursor-pointer sm:hover:opacity-40">Matteo Postinghel</a> 

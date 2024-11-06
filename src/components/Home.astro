@@ -1,22 +1,50 @@
 ---
 import HomeComp from "../components/HomeComp.astro";
-import { astroI18n, t } from "astro-i18n"
+import { astroI18n, t } from "astro-i18n";
+
+
+
+import img1 from '../../src/assets/img/neptuna/cremona_12.png';
+import img2 from '../../src/assets/img/neptuna/cremona_13.png';
+import img3 from '../../src/assets/img/neptuna/cremona_14.png';
+import img4 from '../../src/assets/img/neptuna/cremona_15.png';
+import img5 from '../../src/assets/img/neptuna/cremona_16.png';
 
 const projects = [
-    { Title: t("projects.0.Title"), Category: t("projects.0.Category"), year: t("projects.0.year"), link:"/neptuna"},
-    { Title: t("projects.1.Title"), Category: t("projects.1.Category"), year: t("projects.1.year"), link:"/neptuna"},
-    { Title: t("projects.2.Title"), Category: t("projects.2.Category"), year: t("projects.2.year"), link:"/neptuna"},
-    { Title: t("projects.3.Title"), Category: t("projects.3.Category"), year: t("projects.3.year"), link:"/neptuna"},
-    { Title: t("projects.4.Title"), Category: t("projects.4.Category"), year: t("projects.4.year"), link:"/neptuna"},
-    { Title: t("projects.5.Title"), Category: t("projects.5.Category"), year: t("projects.5.year"), link:"/neptuna"},
-    { Title: t("projects.6.Title"), Category: t("projects.6.Category"), year: t("projects.6.year"), link:"/neptuna"},
-    { Title: t("projects.7.Title"), Category: t("projects.7.Category"), year: t("projects.7.year"), link:"/neptuna"},
-    { Title: t("projects.8.Title"), Category: t("projects.8.Category"), year: t("projects.8.year"), link:"/neptuna"},
-    { Title: t("projects.9.Title"), Category: t("projects.9.Category"), year: t("projects.9.year"), link:"/neptuna"}
+    { 
+        Title: "Energyoo", 
+        Category: "Visual Identity", 
+        year: "2024", 
+        link: "/neptuna",
+        images: [img1, img2, img3, img4, img5]
+    },
+    { 
+        Title: "By.it", 
+        Category: "Web Design", 
+        year: "2024", 
+        link: "/neptuna",
+        images: [img1, img2, img3]
+    },
+
+    { Title: t("projects.2.Title"), Category: t("projects.2.Category"), year: t("projects.2.year"), link: "/neptuna" },
+    { Title: t("projects.3.Title"), Category: t("projects.3.Category"), year: t("projects.3.year"), link: "/neptuna" },
+    { Title: t("projects.4.Title"), Category: t("projects.4.Category"), year: t("projects.4.year"), link: "/neptuna" },
+    { Title: t("projects.5.Title"), Category: t("projects.5.Category"), year: t("projects.5.year"), link: "/neptuna" },
+    { Title: t("projects.6.Title"), Category: t("projects.6.Category"), year: t("projects.6.year"), link: "/neptuna" },
+    { Title: t("projects.7.Title"), Category: t("projects.7.Category"), year: t("projects.7.year"), link: "/neptuna" },
+    { Title: t("projects.8.Title"), Category: t("projects.8.Category"), year: t("projects.8.year"), link: "/neptuna" },
+    { Title: t("projects.9.Title"), Category: t("projects.9.Category"), year: t("projects.9.year"), link: "/neptuna" }
 ];
+
+
+let openGalleryIndex: number | null = null;
+
+function toggleGallery(index: number) {
+    openGalleryIndex = openGalleryIndex === index ? null : index;
+}
 ---
 
-<div class="sm:fixed sm:bottom-2 max-sm:pt-72 max-sm:pb-12 px-2 sm:w-full">
+<div class="sm:fixed sm:bottom-2 max-sm:pt-72 max-sm:pb-12 px-2 sm:w-full no-scrollbar">
     {projects.map((project, index) => (
         <HomeComp 
             Title={project.Title} 
@@ -24,6 +52,9 @@ const projects = [
             num={(index + 1).toString()} 
             year={project.year} 
             Category={project.Category} 
+            images={project.images} 
+            isOpen={openGalleryIndex === index} 
+            onToggle={() => toggleGallery(index)} 
         />
     ))}
 </div>
