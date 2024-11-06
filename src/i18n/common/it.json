@@ -1,0 +1,21 @@
+{
+	"index": {
+		"title": "Matteo Postinghel"
+	},
+	"nav": {
+		"about": "Ciao, sono Matteo, piacere di conoscerti! Attualmente sono uno studente di Design della Comunicazione al Politecnico di Milano, originario di Monaco di Baviera, Germania. Prima di Milano, ho trascorso un anno a Rotterdam esplorando il design della trasformazione. Il mio background spazia dal branding al coding, alla segnaletica e altro ancora. La mia passione è tradurre i valori in artefatti tangibili per una comunicazione efficace, cercando sempre nuove idee piuttosto che seguire uno stile specifico. Affronto ogni progetto con umiltà e un sincero desiderio di contribuire in modo significativo al mondo diversificato del design e della comunicazione. Ho avuto il privilegio di collaborare con alcuni studi di design, e se sei interessato a lavorare con me, non esitare a contattarmi.",
+		"contact": "Contatto"
+	},
+	"projects": [
+		{ "Title": "Energyoo", "Category": "Identità Visiva", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
+		{ "Title": "By.it", "Category": "Web Design", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
+		{ "Title": "Raw Scenarios", "Category": "Web Design", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
+		{ "Title": "Cinema e Fotografia", "Category": "Editoria", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
+		{ "Title": "Neptuna", "Category": "Design Speculativo", "year": "2024", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
+		{ "Title": "Liutaio di Cremona", "Category": "Identità Visiva", "year": "2023", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
+		{ "Title": "Mappa Metropolitana di Milano", "Category": "Cartografia", "year": "2023", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
+		{ "Title": "Studio 100km", "Category": "Web Design", "year": "2023", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
+		{ "Title": "Anatomia dell'Orchestra", "Category": "Web Design", "year": "2022", "link": "/neptuna", "img": "/img/home/cremona_14.png" },
+		{ "Title": "Rappresentazione dell'Assenza e dell'Essenza della Nerezza", "Category": "Editoria", "year": "2021", "link": "/neptuna", "img": "/img/home/cremona_14.png" }
+	  ]
+}

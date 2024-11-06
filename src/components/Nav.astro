@@ -1,0 +1,28 @@
+---
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+import { astroI18n, t } from "astro-i18n";
+astroI18n.locale;
+---
+
+<div  class="grid grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference">
+    <div x-data="{ showAbout: false}" class="col-span-9">
+        <div @click="showAbout = !showAbout" class="cursor-pointer hover:opacity-40">Matteo Postinghel</div>
+        <p x-show="showAbout" class="max-w-screen-lg">
+            {t("nav.about")}
+        </p>
+    </div>
+    <div class="col-span-2 flex items-center text-white mix-blend-difference relative">
+        <LanguageSwitcher/>
+    </div>
+    <div x-data="{ showContact: false }" class="justify-end">
+        <div @click="showContact = !showContact" class="cursor-pointer text-right">
+            <p class="justify-self-end hover:opacity-40">{t("nav.contact")}</p>
+        </div>
+        <div x-show="showContact" x-cloak x-transition.opacity.duration.100ms class="sm:text-right sm:ml-auto pt-3 text-white mix-blend-difference z-40">
+            <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40">Email</a></div>
+            <div><a href="https://www.linkedin.com/in/matteo-postinghel/" class="hover:opacity-40" target="_blank">LinkedIn</a></div>
+            <div><a href="https://www.instagram.com/matteo.post/" class="hover:opacity-40" target="_blank">Instagram</a></div>
+            <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40">Curriculum</a></div>
+        </div>
+    </div>
+</div>

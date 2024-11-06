@@ -1,4 +1,8 @@
 ---
+import { astroI18n, t } from "astro-i18n"
+const currentLocale = astroI18n.locale;
+
+import { ViewTransitions } from 'astro:transitions';
 interface Props {
 	title: string;
 }
@@ -7,36 +11,63 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={currentLocale} class="antialiased">
 	<head>
+		<title>{title}</title>
+		<!-- Basic Meta Tags -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://use.typekit.net/lze6fdf.css">
+		<meta name="description" content="Hi, I'm Matteo, a Communication Design student at Politecnico di Milano with expertise in branding, coding, and wayfinding. I’m passionate about creating impactful designs and transforming values into artifacts. Currently based in Milan, originally from Munich." />
+		<meta name="keywords" content="Communication Design, Branding, Wayfinding, Editorial Design, Coding, Milan Designer, Munich Designer, Matteo, Transformation Design, Politecnico di Milano" />
+		<meta name="author" content="Matteo Postinghel" />
+		<meta name="robots" content="index, follow" />
+		<meta http-equiv="content-language" content="en" />
+	
+		<!-- Favicon -->
 		<link rel="icon" type="image/gif" sizes="32x32" href="/assets/links/about/MP.png">
 	
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="https://use.typekit.net/lze6fdf.css">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+		<!-- Open Graph Meta Tags (Social Media Sharing) -->
+		<meta property="og:title" content="Matteo - Communication Designer | Milan & Munich" />
+		<meta property="og:description" content="Communication Designer based in Milan, specializing in branding, coding, and editorial design. Discover my journey from Munich to Milan and explore my projects!" />
+		<meta property="og:image" content="https://yourwebsite.com/path_to_image.jpg" /> <!-- Update image URL -->
+		<meta property="og:url" content="https://matteopostinghel.com" /> <!-- Update with actual URL -->
+		<meta property="og:type" content="website" />
+	
+		<!-- Twitter Card Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Matteo - Communication Designer | Milan & Munich" />
+		<meta name="twitter:description" content="Hi, I'm Matteo! A Communication Designer based in Milan, exploring branding, wayfinding, coding, and more." />
+		<meta name="twitter:image" content="https://matteopostinghel.com/path_to_image.jpg" /> <!-- Update image URL -->
+	
+		<!-- Scripts -->
 		<script is:inline src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-			<!-- Google tag (gtag.js) -->
+	
+		<!-- Google Analytics -->
+		<!-- Uncomment and update the Google Analytics ID when ready to use -->
+		<!-- 
 		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-ZL76RB7TNY"></script>
 		<script is:inline>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-	
-		gtag('config', 'G-ZL76RB7TNY');
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-ZL76RB7TNY');
 		</script>
-		<title>{title}</title>
-		<meta name="description" content="I'm currently a Communication Design student at Politecnico of Milan, originally from Munich, Germany. Prior to my time in Milan, I spent a year in Rotterdam, exploring transformation design. My background spans branding, coding, wayfinding, and more. My passion lies in translating values into tangible artifacts for effective communication, always seeking new ideas rather than adhering to a specific style. I approach every project with a sense of humility and a genuine desire to contribute meaningfully to the diverse world of design and communication. I've had the privilege to collaborate with some design studios, and if you're interested in working with me, feel free to reach out. ">
+		-->
+	
+		<!-- View Transitions API (if custom or third-party component) -->
+		<ViewTransitions />
 	</head>
+		
 	<body>
 		<slot />
 	</body>
 </html>
-
-<script is:inline>AOS.init();</script>
-
 <style is:global>
-	:root {
+		:root {
 		@apply antialiased tracking-tight;
 	}
 

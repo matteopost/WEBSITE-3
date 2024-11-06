@@ -1,17 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import NAV1 from '../components/NAV_1.astro';
-import Home1 from '../layouts/Home1.astro';
-import Home2 from '../layouts/Home2.astro';
+import Home from '../components/Home.astro';
+import Nav from '../components/Nav.astro';
+import { astroI18n, t } from "astro-i18n"
+
+
+astroI18n.locale 
 ---
 
-<Layout title="Matteo Postinghel">
-	<NAV1/>
-	<!-- <Home1/> -->
-	<Home2/>
-
-	
-
-
+<Layout title={t("index.title")}>
+	<Nav/>
+	<Home/>
 </Layout>
 

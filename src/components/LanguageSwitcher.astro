@@ -1,0 +1,87 @@
+---
+import { astroI18n, l } from "astro-i18n";
+
+interface Props {
+	showCurrent: boolean;
+	labels: {
+		[locale: string]: string;
+	};
+}
+
+const { showCurrent = true, labels = {} } = Astro.props;
+
+const params: Record<string, string> = {};
+for (const [key, value] of Object.entries(Astro.params)) {
+	if (value === undefined) continue;
+	params[key] = String(value);
+}
+
+// Initial links setup
+let links = astroI18n.locales.map((locale) => ({
+	locale,
+	href: l(Astro.url.pathname, params, {
+		targetLocale: locale,
+	}),
+	label: labels[locale] || locale.toUpperCase(),
+}));
+
+if (!showCurrent) {
+	links = links.filter((link) => link.locale !== astroI18n.locale);
+}
+
+const currentLocale = astroI18n.locale;
+const currentLanguage = links.find((link) => link.locale === currentLocale);
+const otherLanguages = links.filter((link) => link.locale !== currentLocale);
+---
+
+<nav client:load>
+	<ul class="flex flex-col">
+		<li>
+			<a href={currentLanguage?.href} class="hover:opacity-50" onClick="toggleDropdown(event)">
+				{currentLanguage?.label}
+			</a>
+		</li>
+		<div id="dropdown" class=" hidden">
+			{otherLanguages.map(({ href, label, locale }) => (
+				<li key={locale}>
+					<a
+						href={href}
+						class="hover:opacity-50"
+						onClick={(e) => {
+							e.preventDefault();
+							changeLanguage(locale);
+						}}
+					>
+						{label}
+					</a>
+				</li>
+			))}
+		</div>
+	</ul>
+</nav>
+
+<script is:inline>
+  function toggleDropdown(event) {
+    event.preventDefault();
+    const dropdown = document.getElementById("dropdown");
+    if (dropdown.classList.contains("hidden")) {
+      dropdown.classList.remove("hidden");
+    } else {
+      dropdown.classList.add("hidden");
+    }
+  }
+
+  function changeLanguage(locale) {
+    const currentLocale = "{astroI18n.locale}";
+    const currentLabel = "{currentLanguage?.label}";
+    const newLocaleLabel = {
+      it: "IT",
+      en: "EN"
+    }[locale];
+
+    document.querySelector("a[href='#']").innerText = newLocaleLabel;
+
+    const dropdown = document.getElementById("dropdown");
+    dropdown.classList.add("hidden");
+  }
+</script>

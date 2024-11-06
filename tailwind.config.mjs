@@ -4,16 +4,10 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				'sans': 'Oracle',
-				'slab': 'Durk',
-			},
-			colors: {
-				'blu': '#0000FF',
-			},
-			lineHeight: {
-				'negative': '0.94',
-			},
+				'sans': 'Oracle'
+			}
 		},
+
 	},
 	plugins: [],
 }
