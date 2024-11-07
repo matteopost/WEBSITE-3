@@ -12,16 +12,16 @@
 	  "cookie": "Durch das Browsen auf dieser Website akzeptieren Sie automatisch Cookies."
 	},
 	"projects": [
-	  { "Title": "Energyoo", "Category": "Visuelle Identität", "year": "2024"},
-	  { "Title": "By.it", "Category": "Webdesign", "year": "2024"},
-	  { "Title": "Raw Scenarios", "Category": "Webdesign", "year": "2024"},
-	  { "Title": "Kino und Fotografie", "Category": "Verlag", "year": "2024"},
-	  { "Title": "Neptuna", "Category": "Spekulatives Design", "year": "2024"},
-	  { "Title": "Cremona Geigenbauer", "Category": "Visuelle Identität", "year": "2023"},
-	  { "Title": "Mailänder U-Bahn-Karte", "Category": "Kartographie", "year": "2023"},
-	  { "Title": "100km Studio", "Category": "Webdesign", "year": "2023"},
-	  { "Title": "Anatomie des Orchesters", "Category": "Webdesign", "year": "2022"},
-	  { "Title": "Darstellung von Abwesenheit und Essenz von Schwarzem", "Category": "Verlag", "year": "2021"}
+	  { "Title": "Energyoo", "Category": "Visuelle Identität", "year": "2024", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
+	  { "Title": "By.it", "Category": "Webdesign", "year": "2024", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
+	  { "Title": "Raw Scenarios", "Category": "Webdesign", "year": "2024", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
+	  { "Title": "Kino und Fotografie", "Category": "Verlag", "year": "2024", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
+	  { "Title": "Neptuna", "Category": "Spekulatives Design", "year": "2024", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
+	  { "Title": "Cremona Geigenbauer", "Category": "Visuelle Identität", "year": "2023", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
+	  { "Title": "Mailänder U-Bahn-Karte", "Category": "Kartographie", "year": "2023", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
+	  { "Title": "100km Studio", "Category": "Webdesign", "year": "2023", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
+	  { "Title": "Anatomie des Orchesters", "Category": "Webdesign", "year": "2022", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
+	  { "Title": "Darstellung von Abwesenheit und Essenz von Schwarzem", "Category": "Verlag", "year": "2021", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."}
 	]
   }
   

@@ -12,16 +12,16 @@
 	  "cookie": "En naviguant sur ce site, vous acceptez automatiquement les cookies."
 	},
 	"projects": [
-	  { "Title": "Energyoo", "Category": "Identité Visuelle", "year": "2024"},
-	  { "Title": "By.it", "Category": "Design Web", "year": "2024"},
-	  { "Title": "Raw Scenarios", "Category": "Design Web", "year": "2024"},
-	  { "Title": "Cinéma et Photographie", "Category": "Édition", "year": "2024"},
-	  { "Title": "Neptuna", "Category": "Design Spéculatif", "year": "2024"},
-	  { "Title": "Luthier de Crémone", "Category": "Identité Visuelle", "year": "2023"},
-	  { "Title": "Plan du Métro de Milan", "Category": "Cartographie", "year": "2023"},
-	  { "Title": "Studio 100km", "Category": "Design Web", "year": "2023"},
-	  { "Title": "Anatomie de l'Orchestre", "Category": "Design Web", "year": "2022"},
-	  { "Title": "Représentation de l'Absence et de l'Essence de la Noirceur", "Category": "Édition", "year": "2021"}
+	  { "Title": "Energyoo", "Category": "Identité Visuelle", "year": "2024", "description": "Redesign conceptuel de la carte du métro de Milan par 100km Studio : Dans ce projet, j'ai contribué pendant mon stage à la réimagination du tracé du métro souterrain et de surface de Milan."},
+	  { "Title": "By.it", "Category": "Design Web", "year": "2024", "description": "Redesign conceptuel de la carte du métro de Milan par 100km Studio : Dans ce projet, j'ai contribué pendant mon stage à la réimagination du tracé du métro souterrain et de surface de Milan."},
+	  { "Title": "Raw Scenarios", "Category": "Design Web", "year": "2024", "description": "Redesign conceptuel de la carte du métro de Milan par 100km Studio : Dans ce projet, j'ai contribué pendant mon stage à la réimagination du tracé du métro souterrain et de surface de Milan."},
+	  { "Title": "Cinéma et Photographie", "Category": "Édition", "year": "2024", "description": "Redesign conceptuel de la carte du métro de Milan par 100km Studio : Dans ce projet, j'ai contribué pendant mon stage à la réimagination du tracé du métro souterrain et de surface de Milan."},
+	  { "Title": "Neptuna", "Category": "Design Spéculatif", "year": "2024", "description": "Redesign conceptuel de la carte du métro de Milan par 100km Studio : Dans ce projet, j'ai contribué pendant mon stage à la réimagination du tracé du métro souterrain et de surface de Milan."},
+	  { "Title": "Luthier de Crémone", "Category": "Identité Visuelle", "year": "2023", "description": "Redesign conceptuel de la carte du métro de Milan par 100km Studio : Dans ce projet, j'ai contribué pendant mon stage à la réimagination du tracé du métro souterrain et de surface de Milan."},
+	  { "Title": "Plan du Métro de Milan", "Category": "Cartographie", "year": "2023", "description": "Redesign conceptuel de la carte du métro de Milan par 100km Studio : Dans ce projet, j'ai contribué pendant mon stage à la réimagination du tracé du métro souterrain et de surface de Milan."},
+	  { "Title": "Studio 100km", "Category": "Design Web", "year": "2023", "description": "Redesign conceptuel de la carte du métro de Milan par 100km Studio : Dans ce projet, j'ai contribué pendant mon stage à la réimagination du tracé du métro souterrain et de surface de Milan."},
+	  { "Title": "Anatomie de l'Orchestre", "Category": "Design Web", "year": "2022", "description": "Redesign conceptuel de la carte du métro de Milan par 100km Studio : Dans ce projet, j'ai contribué pendant mon stage à la réimagination du tracé du métro souterrain et de surface de Milan."},
+	  { "Title": "Représentation de l'Absence et de l'Essence de la Noirceur", "Category": "Édition", "year": "2021", "description": "Redesign conceptuel de la carte du métro de Milan par 100km Studio : Dans ce projet, j'ai contribué pendant mon stage à la réimagination du tracé du métro souterrain et de surface de Milan."}
 	]
   }
   

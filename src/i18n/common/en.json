@@ -12,16 +12,16 @@
 	  "cookie": "By browsing this site, you automatically accept cookies."
 	},
 	"projects": [
-	  { "Title": "Energyoo", "Category": "Visual Identity", "year": "2024"},
-	  { "Title": "By.it", "Category": "Web Design", "year": "2024"},
-	  { "Title": "Raw Scenarios", "Category": "Web Design", "year": "2024"},
-	  { "Title": "Cinema and Photography", "Category": "Publishing", "year": "2024"},
-	  { "Title": "Neptuna", "Category": "Speculative Design", "year": "2024"},
-	  { "Title": "Cremona Luthier", "Category": "Visual Identity", "year": "2023"},
-	  { "Title": "Milan Metro Map", "Category": "Cartography", "year": "2023"},
-	  { "Title": "100km Studio", "Category": "Web Design", "year": "2023"},
-	  { "Title": "Anatomy of the Orchestra", "Category": "Web Design", "year": "2022"},
-	  { "Title": "Representation of the Absence and Essence of Blackness", "Category": "Publishing", "year": "2021"}
+	  { "Title": "Energyoo", "Category": "Visual Identity", "year": "2024", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
+	  { "Title": "By.it", "Category": "Web Design", "year": "2024", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
+	  { "Title": "Raw Scenarios", "Category": "Web Design", "year": "2024", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
+	  { "Title": "Cinema and Photography", "Category": "Publishing", "year": "2024", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
+	  { "Title": "Neptuna", "Category": "Speculative Design", "year": "2024", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
+	  { "Title": "Cremona Luthier", "Category": "Visual Identity", "year": "2023", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
+	  { "Title": "Milan Metro Map", "Category": "Cartography", "year": "2023", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
+	  { "Title": "100km Studio", "Category": "Web Design", "year": "2023", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
+	  { "Title": "Anatomy of the Orchestra", "Category": "Web Design", "year": "2022", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
+	  { "Title": "Representation of the Absence and Essence of Blackness", "Category": "Publishing", "year": "2021", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."}
 	]
   }
   

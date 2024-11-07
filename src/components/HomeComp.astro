@@ -6,23 +6,21 @@ interface Props {
     num: string;
     year: string;
     Category: string;
-    link: string;
     images?: ImageMetadata[]; 
+    description: string;
+    link: string;
+    linkText: string;
+    collaborators?: { name: string; link: string }[];
+
 }
 
-
-const { Title, num, year, Category, link, images = [] } = Astro.props;
+const { Title, num, year, Category, images = [], description, link, linkText, collaborators = [] } = Astro.props;
 ---
 
 <div x-data="{ openGallery: false }" class="group no-scrollbar">
     <div class="grid grid-cols-2 sm:grid-cols-12 info leading-tight max-sm:py-2">
         <p class="col-span-1 ">[{num}]</p>
-        <div class="col-span-1 sm:col-span-8">
-
-            <a href={link} class="it uppercase link" @click.prevent="openGallery = !openGallery">
-                {Title}
-            </a>
-        </div>
+        <p class="col-span-1 sm:col-span-8 cursor-pointer uppercase link" @click.prevent="openGallery = !openGallery">{Title}</p>
         <div class="col-span-1 sm:hidden"></div>
         <p class="col-span-1 sm:col-span-2">{Category}</p>
         <div class="col-span-1 sm:hidden"></div>
@@ -42,34 +40,37 @@ const { Title, num, year, Category, link, images = [] } = Astro.props;
             <Image 
                 src={img} 
                 alt={`Image ${index + 1}`} 
-                width={500} 
-                height={500} 
-                format='webp'
-                class="sm:hidden aspect-video object-cover w-[calc(75%-8px)]" 
-            />
-            <Image 
-                src={img} 
-                alt={`Image ${index + 1}`} 
                 width={1080} 
                 height={1080} 
-                format='webp'
-                class="max-sm:hidden lg:hidden aspect-video object-cover w-[calc(75%-8px)]" 
-            />
-            <Image 
-                src={img} 
-                alt={`Image ${index + 1}`} 
-                width={1920} 
-                height={1920} 
-                format='webp'
-                class="max-lg:hidden aspect-video object-cover w-[calc(75%-8px)]" 
+                format="webp"
+                class="aspect-video object-cover max-sm:w-[90%] sm:h-[250px] lg:h-[300px] xl:h-[350px]" 
             />
         ))}
         
-        <div class="w-1/2 sm:w-[calc(100%*(11/12))] flex-shrink-0 whitespace-nowrap">
-            <p>Ciao Ciao Ciao</p>
-        </div>      
+        
+        <div class="w-full sm:w-[calc(100%*(11/12))] flex flex-shrink-0 whitespace-nowrap">
+            <div class="whitespace-normal break-words max-w-[45%] sm:max-w-[50%]">
+                <p>{description}</p>
+                <br>
+                {link && (
+                    <a href={link} target="_blank" class="hover:opacity-40 transition-opacity whitespace-nowrap">
+                        {linkText}
+                    </a>
+                )}
+            </div>
+            <div class="sticky left-1/2 sm:left-[calc(100%*(9/12))] max-w-[45%] sm:max-w-[calc(100%*(2/12))] top-0">
+                {collaborators?.map((collab) => (
+                    <a href={collab.link} target="_blank" class="block hover:opacity-40 transition-opacity">
+                        {collab.name}
+                    </a>
+                ))}
+            </div>
+        </div>   
+        
+        
     </div>
 </div>
+
 
 
 <script is:inline>

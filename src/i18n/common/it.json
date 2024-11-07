@@ -12,15 +12,15 @@
 	  "cookie": "Navigando su questo sito, accetti automaticamente i cookie."
 	},
 	"projects": [
-	  { "Title": "Energyoo", "Category": "Identità Visiva", "year": "2024"},
-	  { "Title": "By.it", "Category": "Web Design", "year": "2024"},
-	  { "Title": "Raw Scenarios", "Category": "Web Design", "year": "2024"},
-	  { "Title": "Cinema e Fotografia", "Category": "Editoria", "year": "2024"},
-	  { "Title": "Neptuna", "Category": "Design Speculativo", "year": "2024"},
-	  { "Title": "Liutaio di Cremona", "Category": "Identità Visiva", "year": "2023"},
-	  { "Title": "Mappa Metropolitana di Milano", "Category": "Cartografia", "year": "2023"},
-	  { "Title": "Studio 100km", "Category": "Web Design", "year": "2023"},
-	  { "Title": "Anatomia dell'Orchestra", "Category": "Web Design", "year": "2022"},
-	  { "Title": "Rappresentazione dell'Assenza e dell'Essenza della Nerezza", "Category": "Editoria", "year": "2021"}
+	  { "Title": "Energyoo", "Category": "Identità Visiva", "year": "2024",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
+	  { "Title": "By.it", "Category": "Web Design", "year": "2024",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
+	  { "Title": "Raw Scenarios", "Category": "Web Design", "year": "2024",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
+	  { "Title": "Cinema e Fotografia", "Category": "Editoria", "year": "2024",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
+	  { "Title": "Neptuna", "Category": "Design Speculativo", "year": "2024",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
+	  { "Title": "Liutaio di Cremona", "Category": "Identità Visiva", "year": "2023",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
+	  { "Title": "Mappa Metropolitana di Milano", "Category": "Cartografia", "year": "2023",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
+	  { "Title": "Studio 100km", "Category": "Web Design", "year": "2023",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
+	  { "Title": "Anatomia dell'Orchestra", "Category": "Web Design", "year": "2022",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
+	  { "Title": "Rappresentazione dell'Assenza e dell'Essenza della Nerezza", "Category": "Editoria", "year": "2021",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."}
 	]
 }
