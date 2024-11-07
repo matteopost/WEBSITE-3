@@ -2,11 +2,11 @@
 import HomeComp from "../components/HomeComp.astro";
 import { astroI18n, t } from "astro-i18n";
 
-import img1 from '../../src/assets/img/neptuna/cremona_12.png';
-import img2 from '../../src/assets/img/neptuna/cremona_13.png';
-import img3 from '../../src/assets/img/neptuna/cremona_14.png';
-import img4 from '../../src/assets/img/neptuna/cremona_15.png';
-import img5 from '../../src/assets/img/neptuna/cremona_16.png';
+import img1 from '../../src/assets/img/cremona/cremona_12.png';
+import img2 from '../../src/assets/img/cremona/cremona_13.png';
+import img3 from '../../src/assets/img/cremona/cremona_14.png';
+import img4 from '../../src/assets/img/cremona/cremona_15.png';
+import img5 from '../../src/assets/img/cremona/cremona_16.png';
 
 const projects = [
     { 
@@ -95,7 +95,7 @@ const projects = [
         Title: t("projects.5.Title"), 
         Category: t("projects.5.Category"), 
         year: t("projects.5.year"), 
-              images: [img1, img2, img3, img4, img5],
+        images: [img1, img2, img3, img4, img5],
         description: t("projects.5.description"),
         link: "https://100km.studio/",
         linkText: "100km studio",
@@ -129,7 +129,7 @@ const projects = [
         Title: t("projects.7.Title"), 
         Category: t("projects.7.Category"), 
         year: t("projects.7.year"), 
-              images: [img1, img2, img3, img4, img5],
+        images: [img1, img2, img3, img4, img5],
         description: t("projects.7.description"),
         link: "https://100km.studio/",
         linkText: "100km studio",
@@ -146,7 +146,7 @@ const projects = [
         Title: t("projects.8.Title"), 
         Category: t("projects.8.Category"), 
         year: t("projects.8.year"), 
-              images: [img1, img2, img3, img4, img5],
+        images: [img1, img2, img3, img4, img5],
         description: t("projects.8.description"),
         link: "https://100km.studio/",
         linkText: "100km studio",
@@ -163,7 +163,7 @@ const projects = [
         Title: t("projects.9.Title"), 
         Category: t("projects.9.Category"), 
         year: t("projects.9.year"), 
-              images: [img1, img2, img3, img4, img5],
+        images: [img1, img2, img3, img4, img5],
         description: t("projects.9.description"),
         link: "https://100km.studio/",
         linkText: "100km studio",
@@ -184,7 +184,7 @@ const projects = [
         {projects.map((project, index) => (
             <HomeComp 
                 Title={project.Title} 
-                num={(index + 1).toString()} 
+                num={(index + 1).toString()}  
                 year={project.year} 
                 Category={project.Category} 
                 images={project.images} 
