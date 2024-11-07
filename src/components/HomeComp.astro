@@ -36,16 +36,32 @@ const { Title, num, year, Category, link, images = [] } = Astro.props;
         x-transition:leave="transition ease-in duration-200"
         x-transition:leave-start="opacity-100"
         x-transition:leave-end="opacity-0"
-        class="flex overflow-x-auto space-x-2 no-scrollbar">
+        class="flex overflow-x-auto gap-2 no-scrollbar">
         
         {images?.map((img, index) => (
+            <Image 
+                src={img} 
+                alt={`Image ${index + 1}`} 
+                width={500} 
+                height={500} 
+                format='webp'
+                class="sm:hidden aspect-video object-cover w-[calc(75%-8px)]" 
+            />
             <Image 
                 src={img} 
                 alt={`Image ${index + 1}`} 
                 width={1080} 
                 height={1080} 
                 format='webp'
-                class="aspect-video object-cover w-[calc(75%-8px)]" 
+                class="max-sm:hidden lg:hidden aspect-video object-cover w-[calc(75%-8px)]" 
+            />
+            <Image 
+                src={img} 
+                alt={`Image ${index + 1}`} 
+                width={1920} 
+                height={1920} 
+                format='webp'
+                class="max-lg:hidden aspect-video object-cover w-[calc(75%-8px)]" 
             />
         ))}
         
