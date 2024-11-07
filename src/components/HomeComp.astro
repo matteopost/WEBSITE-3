@@ -1,5 +1,6 @@
 ---
 import Image from 'astro/components/Image.astro';
+import { astroI18n, t } from "astro-i18n";
 
 interface Props {
     Title: string;
@@ -59,11 +60,16 @@ const { Title, num, year, Category, images = [], description, link, linkText, co
                 )}
             </div>
             <div class="sticky left-1/2 sm:left-[calc(100%*(9/12))] max-w-[45%] sm:max-w-[calc(100%*(2/12))] top-0">
-                {collaborators?.map((collab) => (
-                    <a href={collab.link} target="_blank" class="block hover:opacity-40 transition-opacity">
-                        {collab.name}
-                    </a>
-                ))}
+                {collaborators?.length > 0 && (
+                    <>
+                        <p>{t("index.collab")}:</p>
+                        {collaborators.map((collab) => (
+                            <a href={collab.link} target="_blank" class="block hover:opacity-40 transition-opacity">
+                                {collab.name}
+                            </a>
+                        ))}
+                    </>
+                )}
             </div>
         </div>   
         

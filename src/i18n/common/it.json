@@ -1,6 +1,7 @@
 {
 	"index": {
-	  "title": "Matteo Postinghel"
+	  "title": "Matteo Postinghel",
+	  "collab": "Collaboratori"
 	},
 	"nav": {
 	  "year": "Anni:",
@@ -13,10 +14,10 @@
 	},
 	"projects": [
 	  { "Title": "Energyoo", "Category": "Identità Visiva", "year": "2024",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
-	  { "Title": "By.it", "Category": "Web Design", "year": "2024",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
-	  { "Title": "Raw Scenarios", "Category": "Web Design", "year": "2024",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
-	  { "Title": "Cinema e Fotografia", "Category": "Editoria", "year": "2024",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
-	  { "Title": "Neptuna", "Category": "Design Speculativo", "year": "2024",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
+	  { "Title": "By.it", "Category": "Web Design", "year": "2024",  "description": "E-commerce per prodotti fuori produzione, accessibile in modalità scura solo la sera, svelando segreti e storie sui prodotti."},
+	  { "Title": "Raw Scenarios", "Category": "Web Design", "year": "2024",  "description": "Sito web per la mostra “Raw Scenarios: Reflection on Human Overconsumption” presso Dotdotdot, informando i visitatori e archiviando i progetti esposti."},
+	  { "Title": "Cinema e Fotografia", "Category": "Editoria", "year": "2024",  "description": "Due libri di editoria esplorano il cinema e la fotografia: uno dedicato a John Heartfield, pioniere del fotomontaggio politico dadaista, e l’altro su “Emak Bakia” di Man Ray, opera chiave del cinema surrealista."},
+	  { "Title": "Neptuna", "Category": "Design Speculativo", "year": "2024",  "description": "Neptuna è un progetto di tesi di design speculativo che affronta le problematiche della produzione di tonno nel contesto dei cambiamenti climatici. Attraverso snack ironici e simbolici e un’esperienza di distribuzione lenta, invita a riflettere sui costi ambientali delle scelte di consumo.ç"},
 	  { "Title": "Liutaio di Cremona", "Category": "Identità Visiva", "year": "2023",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
 	  { "Title": "Mappa Metropolitana di Milano", "Category": "Cartografia", "year": "2023",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},
 	  { "Title": "Studio 100km", "Category": "Web Design", "year": "2023",  "description": "Concept di redesign della mappa della metropolitana di Milano di 100km Studio: In questo progetto, ho contribuito durante il mio tirocinio alla reimmaginazione del layout del sistema di metropolitana e ferrovia di Milano."},

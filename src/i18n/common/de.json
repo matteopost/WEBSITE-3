@@ -1,6 +1,7 @@
 {
 	"index": {
-	  "title": "Matteo Postinghel"
+	  "title": "Matteo Postinghel",
+	  "collab": "Mitarbeiter"
 	},
 	"nav": {
 	  "year": "Alter:",
@@ -13,9 +14,9 @@
 	},
 	"projects": [
 	  { "Title": "Energyoo", "Category": "Visuelle Identität", "year": "2024", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
-	  { "Title": "By.it", "Category": "Webdesign", "year": "2024", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
-	  { "Title": "Raw Scenarios", "Category": "Webdesign", "year": "2024", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
-	  { "Title": "Kino und Fotografie", "Category": "Verlag", "year": "2024", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
+	  { "Title": "By.it", "Category": "Webdesign", "year": "2024", "description": "E-Commerce-Website für eingestellte Produkte, die nur abends im Dunkelmodus zugänglich ist und Geheimnisse und Geschichten über die Produkte enthüllt."},
+	  { "Title": "Raw Scenarios", "Category": "Webdesign", "year": "2024", "description": "Website für die Ausstellung „Raw Scenarios: Reflection on Human Overconsumption“ bei Dotdotdot, zur Information der Besucher und Archivierung der ausgestellten Projekte."},
+	  { "Title": "Kino und Fotografie", "Category": "Verlag", "year": "2024", "description": "Zwei Bücher zur Verlagskunst befassen sich mit Kino und Fotografie: eines widmet sich John Heartfield, dem Pionier des dadaistischen politischen Fotomontages, und das andere „Emak Bakia“ von Man Ray, einem Schlüsselwerk des surrealistischen Kinos."},
 	  { "Title": "Neptuna", "Category": "Spekulatives Design", "year": "2024", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
 	  { "Title": "Cremona Geigenbauer", "Category": "Visuelle Identität", "year": "2023", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},
 	  { "Title": "Mailänder U-Bahn-Karte", "Category": "Kartographie", "year": "2023", "description": "Konzeptuelles Redesign der Mailänder U-Bahn-Karte durch 100km Studio: In diesem Projekt habe ich während meines Praktikums zur Neugestaltung des U-Bahn- und S-Bahn-Systems von Mailand beigetragen."},

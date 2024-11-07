@@ -1,6 +1,7 @@
 {
 	"index": {
-	  "title": "Matteo Postinghel"
+	  "title": "Matteo Postinghel",
+	  "collab": "Collaborators"
 	},
 	"nav": {
 	  "year": "Years:",
@@ -13,9 +14,9 @@
 	},
 	"projects": [
 	  { "Title": "Energyoo", "Category": "Visual Identity", "year": "2024", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
-	  { "Title": "By.it", "Category": "Web Design", "year": "2024", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
-	  { "Title": "Raw Scenarios", "Category": "Web Design", "year": "2024", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
-	  { "Title": "Cinema and Photography", "Category": "Publishing", "year": "2024", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
+	  { "Title": "By.it", "Category": "Web Design", "year": "2024", "description": "E-commerce site for discontinued products, accessible in dark mode only in the evening, revealing secrets and stories about the products."},
+	  { "Title": "Raw Scenarios", "Category": "Web Design", "year": "2024", "description": "Website for the exhibition “Raw Scenarios: Reflection on Human Overconsumption” at Dotdotdot, informing visitors and archiving the projects displayed."},
+	  { "Title": "Cinema and Photography", "Category": "Publishing", "year": "2024", "description": "Two editorial books explore cinema and photography: one dedicated to John Heartfield, pioneer of Dadaist political photomontage, and the other to “Emak Bakia” by Man Ray, a key work of surrealist cinema."},
 	  { "Title": "Neptuna", "Category": "Speculative Design", "year": "2024", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
 	  { "Title": "Cremona Luthier", "Category": "Visual Identity", "year": "2023", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
 	  { "Title": "Milan Metro Map", "Category": "Cartography", "year": "2023", "description": "Milan Metro Map concept redesign by 100km Studio: In this project, I've contributed during my internship in the reimagination of the layout of Milan's underground and overground metro system."},
