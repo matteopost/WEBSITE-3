@@ -19,7 +19,6 @@ const { Title, num, year, Category, images = [], description, link, linkText, co
 ---
 
 <div x-data="{ openGallery: false }" class="group no-scrollbar">
-    <!-- Project Information -->
     <div class="grid grid-cols-2 sm:grid-cols-12 info leading-tight max-sm:py-2">
         <p class="col-span-1 ">[{num}]</p>
         <p class="col-span-1 sm:col-span-8 cursor-pointer uppercase link" @click.prevent="openGallery = !openGallery">{Title}</p>
@@ -29,7 +28,6 @@ const { Title, num, year, Category, images = [], description, link, linkText, co
         <p class="col-span-1 sm:justify-self-end">{year}</p>
     </div>
 
-    <!-- Gallery and Description -->
     <div x-show="openGallery" x-cloak 
         x-transition:enter="transition ease-out duration-500"
         x-transition:enter-start="transform translate-x-full opacity-0"
@@ -39,7 +37,6 @@ const { Title, num, year, Category, images = [], description, link, linkText, co
         x-transition:leave-end="transform -translate-x-full opacity-0"
         class="flex overflow-x-auto gap-2 no-scrollbar">
         
-        <!-- Image Gallery -->
         {images?.map((img, index) => (
             <Image 
                 src={img} 
@@ -47,12 +44,11 @@ const { Title, num, year, Category, images = [], description, link, linkText, co
                 width={1080} 
                 height={1080} 
                 format="webp"
-                loading="lazy"
+                loading="eager"
                 class="aspect-video object-cover max-sm:w-[95%] sm:h-[250px] lg:h-[300px] xl:h-[350px]" 
             />
         ))}
         
-        <!-- Description and Collaborators -->
         <div class="w-full sm:w-[calc(100%*(11/12))] flex flex-shrink-0 whitespace-nowrap">
             <div class="whitespace-normal break-words max-w-[45%] sm:max-w-[50%]">
                 <p>{description}</p>
