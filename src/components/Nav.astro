@@ -14,23 +14,23 @@ if (isBeforeBirthdayThisYear) {
 }
 ---
 
-<div class="grid grid-cols-4 sm:grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference" transition:persist >
+<div class="grid grid-cols-4 sm:grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference " transition:persist >
     <div x-data="{ showAbout: false }" class="col-span-2 sm:col-span-9 pr-2">
         <div>
-           <a @click="showAbout = !showAbout" class="cursor-pointer sm:hover:opacity-40">Matteo Postinghel</a> 
+           <a @click="showAbout = !showAbout" class="cursor-pointer sm:hover:opacity-40 transition-opacity">Matteo Postinghel</a> 
         </div>
         <div x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="max-w-screen-lg">
             <p>{t("nav.year")} {age}</p>
             <p>{t("nav.from")}</p>
             <p>{t("nav.location")}</p>
             <p>{t("nav.profession")}</p>
-            <p>{t("nav.currently")}</p>
+            <p>{t("nav.currently")}<a href="https://propp.it/" target="_blank" class="hover:opacity-40 transition-opacity"> Propp Studio</a></p>
             <div class="sm:hidden">
                 <br>
-                <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40">Email</a></div>
-                <div><a href="https://www.linkedin.com/in/matteo-postinghel/" class="hover:opacity-40" target="_blank">LinkedIn</a></div>
-                <div><a href="https://www.instagram.com/matteo.post/" class="hover:opacity-40" target="_blank">Instagram</a></div>
-                <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40">Curriculum</a></div>
+                <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Email</a></div>
+                <div><a href="https://www.linkedin.com/in/matteo-postinghel/" class="hover:opacity-40 transition-opacity" target="_blank">LinkedIn</a></div>
+                <div><a href="https://www.instagram.com/matteo.post/" class="hover:opacity-40 transition-opacity" target="_blank">Instagram</a></div>
+                <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Curriculum</a></div>
             </div>
         </div>
 
@@ -48,7 +48,7 @@ if (isBeforeBirthdayThisYear) {
                 <p>{t("nav.cookie")}</p>
                 <button 
                     @click="showCookie = false; localStorage.setItem('cookieAccepted', 'true')" 
-                    class="rotate-45 transform cursor-pointer hover:opacity-40 transition-opacity">+</button>
+                    class="rotate-45 transform cursor-pointer hover:opacity-40 transition-colors">+</button>
             </div>
         </div>
     </div>
@@ -64,10 +64,10 @@ if (isBeforeBirthdayThisYear) {
             <p @click="showContact = !showContact" class="justify-self-end hover:opacity-40 cursor-pointer">{t("nav.contact")}</p>
         </div>
         <div x-show="showContact" x-cloak x-transition.opacity.duration.100ms class="sm:text-right sm:ml-auto text-white mix-blend-difference z-40">
-            <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40">Email</a></div>
-            <div><a href="https://www.linkedin.com/in/matteo-postinghel/" class="hover:opacity-40" target="_blank">LinkedIn</a></div>
-            <div><a href="https://www.instagram.com/matteo.post/" class="hover:opacity-40" target="_blank">Instagram</a></div>
-            <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40">Curriculum</a></div>
+            <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Email</a></div>
+            <div><a href="https://www.linkedin.com/in/matteo-postinghel/" class="hover:opacity-40 transition-opacity" target="_blank">LinkedIn</a></div>
+            <div><a href="https://www.instagram.com/matteo.post/" class="hover:opacity-40 transition-opacity" target="_blank">Instagram</a></div>
+            <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Curriculum</a></div>
         </div>
     </div>
 </div>
