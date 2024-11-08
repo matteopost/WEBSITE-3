@@ -16,16 +16,16 @@ if (isBeforeBirthdayThisYear) {
 
 <div class="grid grid-cols-4 sm:grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference " transition:persist >
     <div x-data="{ showAbout: false }" class="col-span-2 sm:col-span-9 pr-2">
-        <div>
+        <div class="max-sm:mb-1">
            <a @click="showAbout = !showAbout" class="cursor-pointer sm:hover:opacity-40 transition-opacity">Matteo Postinghel</a> 
         </div>
-        <div x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="max-w-screen-lg">
+        <div x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="max-sm:space-y-1 max-w-screen-lg">
             <p>{t("nav.year")} {age}</p>
             <p>{t("nav.from")}</p>
             <p>{t("nav.location")}</p>
             <p>{t("nav.profession")}</p>
             <p>{t("nav.currently")}<a href="https://propp.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity"> Propp Studio</a></p>
-            <div class="sm:hidden">
+            <div class="sm:hidden space-y-1">
                 <br>
                 <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Email</a></div>
                 <div><a href="https://www.linkedin.com/in/matteo-postinghel/" class="hover:opacity-40 transition-opacity" target="_blank">LinkedIn</a></div>

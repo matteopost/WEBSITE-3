@@ -43,8 +43,8 @@ const otherLanguages = links.filter((link) => link.locale !== currentLocale);
 		</li>
 		<div id="dropdown" class="hidden">
 			{otherLanguages.map(({ href, label, locale }) => (
-				<li>
-					<a href={href} class="sm:hover:opacity-40 transition-opacity max-sm:mt-12" data-locale={locale}>
+				<li class="max-sm:mt-1">
+					<a href={href} class="sm:hover:opacity-40 transition-opacity" data-locale={locale}>
 						{label}
 					</a>
 				</li>
