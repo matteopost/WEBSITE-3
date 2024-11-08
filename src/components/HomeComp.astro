@@ -84,26 +84,31 @@ const { Title, num, year, Category, images = [], description, link, linkText, co
 
 <script is:inline>
     document.addEventListener('DOMContentLoaded', function() {
-        const components = document.querySelectorAll('.group');
+        const isSmallScreen = window.matchMedia("(max-width: 639px)");
 
-        components.forEach(component => {
-            const linkElement = component.querySelector('.link');
-            const infoElement = component.querySelector('.info');
-            const imgElement = component.querySelector('.img');
+        if (isSmallScreen.matches) {
+            const components = document.querySelectorAll('.group');
 
-            infoElement.classList.add('transition-opacity');
+            components.forEach(component => {
+                const linkElement = component.querySelector('.link');
+                const infoElement = component.querySelector('.info');
+                const imgElement = component.querySelector('.img');
 
-            linkElement.addEventListener('mouseenter', () => {
-                infoElement.classList.add('opacity-40');
-                imgElement?.classList.remove('hidden');
-                imgElement?.classList.add('block');
+                infoElement.classList.add('transition-opacity');
+
+                linkElement.addEventListener('mouseenter', () => {
+                    infoElement.classList.add('opacity-40');
+                    imgElement?.classList.remove('hidden');
+                    imgElement?.classList.add('block');
+                });
+
+                linkElement.addEventListener('mouseleave', () => {
+                    infoElement.classList.remove('opacity-40');
+                    imgElement?.classList.remove('block');
+                    imgElement?.classList.add('hidden');
+                });
             });
-
-            linkElement.addEventListener('mouseleave', () => {
-                infoElement.classList.remove('opacity-40');
-                imgElement?.classList.remove('block');
-                imgElement?.classList.add('hidden');
-            });
-        });
+        }
     });
 </script>
+
