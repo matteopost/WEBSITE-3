@@ -84,7 +84,7 @@ const { Title, num, year, Category, images = [], description, link, linkText, co
 
 <script is:inline>
     document.addEventListener('DOMContentLoaded', function() {
-        const isSmallScreen = window.matchMedia("(max-width: 639px)");
+        const isSmallScreen = window.matchMedia("(min-width: 640px)");
 
         if (isSmallScreen.matches) {
             const components = document.querySelectorAll('.group');
