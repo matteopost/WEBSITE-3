@@ -13,14 +13,19 @@ interface Props {
     link: string;
     linkText: string;
     collaborators?: { name: string; link: string }[];
-
 }
 
 const { Title, num, year, Category, images = [], video = [], description, link, linkText, collaborators = [] } = Astro.props;
 
-const combinedMedia = [...video.map(v => ({ type: 'video', src: v })), ...images.map(i => ({ type: 'image', src: i }))];
+type MediaType = 'video' | 'image';
+type MediaItem = { type: MediaType; src: string }; 
 
-type MediaItem = { type: 'video' | 'image'; src: string };
+
+const combinedMedia: MediaItem[] = [
+    ...video.map((v) => ({ type: 'video' as const, src: v })),
+    ...images.map((i) => ({ type: 'image' as const, src: i.src })),
+];
+
 
 function shuffleArray(array: MediaItem[]): MediaItem[] {
     for (let i = array.length - 1; i > 0; i--) {
@@ -74,6 +79,7 @@ const shuffledMedia = shuffleArray(combinedMedia);
                 />
             )
         ))}
+
 
         
         <div class="w-full sm:w-[calc(100%*(11/12))] flex flex-shrink-0 whitespace-nowrap">
