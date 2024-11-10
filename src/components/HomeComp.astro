@@ -58,16 +58,7 @@ const shuffledMedia = shuffleArray(combinedMedia);
         class="flex overflow-x-auto gap-2 no-scrollbar">
         
         {shuffledMedia.map((media, index) => (
-            media.type === 'video' ? (
-                <video 
-                    src={media.src} 
-                    muted 
-                    autoplay 
-                    loop 
-                    playsinline 
-                    class="aspect-video object-cover max-sm:w-[95%] sm:h-[250px] lg:h-[300px] xl:h-[350px]" 
-                ></video>
-            ) : (
+            media.type === 'image' ? (
                 <Image 
                     src={media.src} 
                     alt={`Image ${index + 1}`} 
@@ -77,6 +68,15 @@ const shuffledMedia = shuffleArray(combinedMedia);
                     loading="eager"
                     class="aspect-video object-cover max-sm:w-[95%] sm:h-[250px] lg:h-[300px] xl:h-[350px]" 
                 />
+            ) : (
+            <video 
+                    src={media.src} 
+                    muted 
+                    autoplay 
+                    loop 
+                    playsinline 
+                    class="aspect-video object-cover max-sm:w-[95%] sm:h-[250px] lg:h-[300px] xl:h-[350px]" 
+                ></video>
             )
         ))}
 
