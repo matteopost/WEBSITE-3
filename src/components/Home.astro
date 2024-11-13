@@ -1,10 +1,11 @@
 ---
 import HomeComp from "../components/HomeComp.astro";
+import Image from "astro:assets";
 import { t } from "astro-i18n";
 
-import img1 from '../../src/assets/img/cremona/cremona_12.png';
+import img1 from '../../src/assets/img/cremona/cremona_20.png' ;
 import img2 from '../../src/assets/img/cremona/cremona_13.png';
-import img3 from '../../src/assets/img/cremona/cremona_14.png';
+import img3 from '../../src/assets/img/cremona/cremona_18.png';
 import img4 from '../../src/assets/img/cremona/cremona_15.png';
 import img5 from '../../src/assets/img/cremona/cremona_16.png';
 
@@ -185,8 +186,8 @@ const projects = [
                 num={(index + 1).toString()}  
                 year={project.year} 
                 Category={project.Category} 
-                images={project.images} 
-                video={project.video}  
+                images={project.images ?? []}  
+                video={project.video ?? []} 
                 description={project.description}
                 link={project.link}
                 linkText={project.linkText}

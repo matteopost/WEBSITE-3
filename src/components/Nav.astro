@@ -16,7 +16,7 @@ if (isBeforeBirthdayThisYear) {
 
 <div class="grid grid-cols-4 sm:grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference " transition:persist >
     <div x-data="{ showAbout: false }" class="col-span-2 sm:col-span-9 pr-2">
-        <div class="max-sm:mb-1">
+        <!-- <div class="max-sm:mb-1">
            <a @click="showAbout = !showAbout" class="cursor-pointer sm:hover:opacity-40 transition-opacity">Matteo Postinghel</a> 
         </div>
         <div x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="max-sm:space-y-1 max-w-screen-lg">
@@ -32,7 +32,44 @@ if (isBeforeBirthdayThisYear) {
                 <div><a href="https://www.instagram.com/matteo.post/" class="hover:opacity-40 transition-opacity" target="_blank">Instagram</a></div>
                 <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Curriculum</a></div>
             </div>
-        </div>
+        </div> -->
+
+            <a @click="showAbout = !showAbout" class="cursor-pointer sm:hover:opacity-40 transition-opacity sm:col-span-2">Matteo Postinghel</a> 
+            <!-- <p x-show="showAbout" x-cloak x-transition.opacity.duration.150ms >{t("nav.year")} {age}</p>
+            <p x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="col-span-2">{t("nav.from")}</p>
+            <p x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="col-span-2">{t("nav.location")}</p> -->
+            <div class="sm:hidden">
+                <LanguageSwitcher showCurrent={true} labels={{ en: "EN", it: "IT" }} />
+            </div>
+            
+         <div x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="max-sm:space-y-1 max-w-screen-lg">
+             <div class="grid grid-cols-1 sm:grid-cols-9">
+                <p class="col-span-9">{age} years old Communication Designer from Munich, Germany based in Milan, Italy.</p>
+             </div>
+             <br>
+             <div class="grid grid-cols-3 sm:grid-cols-9">
+                <p class="col-span-1 sm:col-span-2">Experience:</p>
+                <p class="col-span-2 sm:col-span-7">Interaction designer intern at <a href="https://propp.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity">Propp Studio</a> [2024-ongoing]</p>
+                <p class="col-span-1 sm:col-span-2"></p>
+                <p class="col-span-2 sm:col-span-7">Graphic designer intern at <a href="https://propp.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity">100km Studio</a> [2021-2022]</p>
+                <p class="col-span-1 sm:col-span-2"></p>
+                <p class="col-span-2 sm:col-span-7">Graphic designer intern at <a href="https://propp.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity">Labirinto</a> [2019]</p>
+             </div>
+             <br>
+             <div class="grid grid-cols-3 sm:grid-cols-9">
+                <p class="col-span-1 sm:col-span-2">Education:</p>
+                <p class="col-span-2 sm:col-span-7">Interaction designer intern at <a href="https://propp.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity">Propp Studio</a> [2024-ongoing]</p>
+                <p class="col-span-1 sm:col-span-2"></p>
+                <p class="col-span-2 sm:col-span-7">MA, Communication design at <a href="https://propp.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity">Politecnico di Milano</a> [2021-2022]</p>
+             </div>
+             <div class="sm:hidden space-y-1">
+                 <br>
+                 <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Email</a></div>
+                 <div><a href="https://www.linkedin.com/in/matteo-postinghel/" class="hover:opacity-40 transition-opacity" target="_blank">LinkedIn</a></div>
+                 <div><a href="https://www.instagram.com/matteo.post/" class="hover:opacity-40 transition-opacity" target="_blank">Instagram</a></div>
+                 <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Curriculum</a></div>
+             </div>
+         </div>
 
 
         <div 
@@ -54,7 +91,7 @@ if (isBeforeBirthdayThisYear) {
     </div>
 
 
-    <div class="col-span-1 sm:col-span-2 flex items-center text-white mix-blend-difference relative">
+    <div class="col-span-2 sm:col-span-2 max-sm:hidden sm:flex items-center text-white mix-blend-difference relative">
         <LanguageSwitcher showCurrent={true} labels={{ en: "EN", it: "IT" }} />
 
     </div>

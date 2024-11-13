@@ -23,8 +23,9 @@ type MediaItem = { type: MediaType; src: string };
 
 const combinedMedia: MediaItem[] = [
     ...video.map((v) => ({ type: 'video' as const, src: v })),
-    ...images.map((i) => ({ type: 'image' as const, src: i.src })),
+    ...images.map((i) => ({ type: 'image' as const, src: i })),
 ];
+
 
 
 function shuffleArray(array: MediaItem[]): MediaItem[] {
