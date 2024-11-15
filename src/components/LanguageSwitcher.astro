@@ -60,7 +60,7 @@ const otherLanguages = links.filter((link) => link.locale !== currentLocale);
 			const isHidden = dropdown.classList.contains("hidden");
 			dropdown.classList.toggle("hidden", !isHidden);
 			dropdown.classList.toggle("max-sm:flex", isHidden);
-			dropdown.classList.toggle("sm:block", isHidden);
+			dropdown.classList.toggle("sm:flex", isHidden);
 		}
 	}
 

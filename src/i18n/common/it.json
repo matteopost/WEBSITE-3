@@ -1,8 +1,13 @@
 {
 	"index": {
-	  "title": "Matteo Postinghel",
-	  "collab": "Collaboratori"
-	},
+	"title": "Matteo Postinghel",
+	"collab": "Collaboratori",
+	"meta": {
+		"keywords": "Design della Comunicazione, Branding, Wayfinding, Design Editoriale, Coding, Designer di Milano, Designer di Monaco, Matteo, Design della Trasformazione, Politecnico di Milano, Web designer, UI/UX, Design grafico, Coding creativo, Design speculativo, Cartografia, Inglese, Francese, Tedesco, Italiano, Belga, Milano, Monaco",
+		"description": "Designer della comunicazione con sede a Milano, specializzato in branding, coding, wayfinding e design editoriale.",
+		"url": "https://matteopostinghel.com/it"
+		}
+	}, 
 	"nav": {
 	  "year": "Anni:",
 	  "from": "Da: Monaco, Germania",

@@ -13,86 +13,45 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang={currentLocale} class="antialiased">
 	<head>
-		<title>{title}</title>
+		<title>{t("index.title")}</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Hi, I'm Matteo, a Communication Design student at Politecnico di Milano with expertise in branding, coding, and wayfinding. I’m passionate about creating impactful designs and transforming values into artifacts. Currently based in Milan, originally from Munich." />
-		<meta name="keywords" content="Communication Design, Branding, Wayfinding, Editorial Design, Coding, Milan Designer, Munich Designer, Matteo, Transformation Design, Politecnico di Milano" />
+		<meta name="description" content={t("index.meta.description")} />
+		<meta name="keywords" content={t("index.meta.keywords")} />
 		<meta name="author" content="Matteo Postinghel" />
 		<meta name="robots" content="index, follow" />
-		<meta http-equiv="content-language" content="en" />
-
-		<link rel="icon" href="/favicon.svg" type="image/x-icon">
-	
+		<meta http-equiv="content-language" content={currentLocale} />
+	  
+		<link rel="icon" href="/favicon.svg" type="image/x-icon" />
 		<link rel="stylesheet" href="https://use.typekit.net/lze6fdf.css">
-		
-		<!-- English -->
-		<meta property="og:title" content="Matteo - Communication Designer | Milan & Munich" />
-		<meta property="og:description" content="Communication Designer based in Milan, specializing in branding, coding, and editorial design. Discover my journey from Munich to Milan and explore my projects!" />
-		<meta property="og:image" content="https://matteopostinghel.com/src/assets/img/card/card.png" />
-		<meta property="og:url" content="https://matteopostinghel.com" />
+	  
+		<meta property="og:title" content={t("index.title")} />
+		<meta property="og:description" content={t("index.meta.description")} />
+		<meta property="og:image" content=`../src/assets/img/card/card.png` />
+		<meta property="og:url" content={t("index.meta.url")} />
 		<meta property="og:type" content="website" />
 
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Matteo - Communication Designer | Milan & Munich" />
-		<meta name="twitter:description" content="Hi, I'm Matteo! A Communication Designer based in Milan, exploring branding, wayfinding, coding, and more." />
-		<meta name="twitter:image" content="https://matteopostinghel.com/src/assets/img/card/card.png" />
+		<meta name="twitter:title" content={t("index.title")} />
+		<meta name="twitter:description" content={t("index.meta.description")} />
+		<meta name="twitter:image" content=`../src/assets/img/card/card.png` />
 
-		<!-- French -->
-		<meta property="og:title" content="Matteo - Designer de Communication | Milan & Munich" />
-		<meta property="og:description" content="Designer de communication basé à Milan, spécialisé en branding, codage et design éditorial. Découvrez mon parcours de Munich à Milan et explorez mes projets!" />
-		<meta property="og:image" content="https://matteopostinghel.com/fr/src/assets/img/card/card.png" />
-		<meta property="og:url" content="https://matteopostinghel.com/fr" />
-		<meta property="og:type" content="website" />
-
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Matteo - Designer de Communication | Milan & Munich" />
-		<meta name="twitter:description" content="Bonjour, je suis Matteo! Designer de communication basé à Milan, explorant le branding, le design d'orientation, le codage et plus encore." />
-		<meta name="twitter:image" content="https://matteopostinghel.com/fr/src/assets/img/card/card.png" />
-
-		<!-- German -->
-		<meta property="og:title" content="Matteo - Kommunikationsdesigner | Mailand & München" />
-		<meta property="og:description" content="Kommunikationsdesigner mit Sitz in Mailand, spezialisiert auf Branding, Codierung und Editorial Design. Entdecken Sie meine Reise von München nach Mailand und sehen Sie meine Projekte!" />
-		<meta property="og:image" content="https://matteopostinghel.com/de/src/assets/img/card/card.png" />
-		<meta property="og:url" content="https://matteopostinghel.com/de" />
-		<meta property="og:type" content="website" />
-
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Matteo - Kommunikationsdesigner | Mailand & München" />
-		<meta name="twitter:description" content="Hallo, ich bin Matteo! Ein Kommunikationsdesigner mit Sitz in Mailand, der sich mit Branding, Orientierungssystemen, Codierung und mehr beschäftigt." />
-		<meta name="twitter:image" content="https://matteopostinghel.com/de/src/assets/img/card/card.png" />
-
-		<!-- Italian -->
-		<meta property="og:title" content="Matteo - Designer della Comunicazione | Milano & Monaco" />
-		<meta property="og:description" content="Designer della comunicazione con sede a Milano, specializzato in branding, coding e design editoriale. Scopri il mio percorso da Monaco a Milano ed esplora i miei progetti!" />
-		<meta property="og:image" content="https://matteopostinghel.com/it/src/assets/img/card/card.png" />
-		<meta property="og:url" content="https://matteopostinghel.com/it" />
-		<meta property="og:type" content="website" />
-
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Matteo - Designer della Comunicazione | Milano & Monaco" />
-		<meta name="twitter:description" content="Ciao, sono Matteo! Designer della comunicazione con sede a Milano, esplorando branding, wayfinding, coding e altro ancora." />
-		<meta name="twitter:image" content="https://matteopostinghel.com/it/src/assets/img/card/card.png" />
-
-		
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<script is:inline src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script is:inline>
-			AOS.init();
-		  </script>
-	
-		<!-- Google Analytics -->
-		<!-- Uncomment and update the Google Analytics ID when ready to use -->
+		  AOS.init();
+		</script>
+
 		<!-- 
 		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-ZL76RB7TNY"></script>
 		<script is:inline>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-ZL76RB7TNY');
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'G-ZL76RB7TNY');
 		</script>
 		-->
-	
+	  
 		<ViewTransitions />
 	</head>
 		
