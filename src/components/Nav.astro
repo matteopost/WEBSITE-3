@@ -1,5 +1,6 @@
 ---
-import LanguageSwitcher from "./LanguageSwitcher.astro";
+import LanguageSwitcher1 from "./LanguageSwitcher-1.astro";
+import LanguageSwitcher2 from "./LanguageSwitcher-2.astro";
 import { astroI18n, t } from "astro-i18n";
 astroI18n.locale;
 
@@ -14,60 +15,38 @@ if (isBeforeBirthdayThisYear) {
 }
 ---
 
-<div class="grid grid-cols-4 sm:grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference " transition:persist >
-    <div x-data="{ showAbout: false }" class="col-span-2 sm:col-span-9 pr-2">
-        <!-- <div class="max-sm:mb-1">
-           <a @click="showAbout = !showAbout" class="cursor-pointer sm:hover:opacity-40 transition-opacity">Matteo Postinghel</a> 
-        </div>
-        <div x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="max-sm:space-y-1 max-w-screen-lg">
-            <p>{t("nav.year")} {age}</p>
-            <p>{t("nav.from")}</p>
-            <p>{t("nav.location")}</p>
-            <p>{t("nav.profession")}</p>
-            <p>{t("nav.currently")}<a href="https://propp.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity"> Propp Studio</a></p>
-            <div class="sm:hidden space-y-1">
-                <br>
-                <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Email</a></div>
-                <div><a href="https://www.linkedin.com/in/matteo-postinghel/" class="hover:opacity-40 transition-opacity" target="_blank">LinkedIn</a></div>
-                <div><a href="https://www.instagram.com/matteo.post/" class="hover:opacity-40 transition-opacity" target="_blank">Instagram</a></div>
-                <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Curriculum</a></div>
-            </div>
-        </div> -->
+<div class="max-sm:hidden grid grid-cols-4 sm:grid-cols-12 w-full fixed px-2 pt-2 z-50 justify-between items-start text-white mix-blend-difference " transition:persist >
+    <div x-data="{ showAbout: false }" class="col-span-9 ">
 
-            <a @click="showAbout = !showAbout" class="cursor-pointer sm:hover:opacity-40 transition-opacity sm:col-span-2">Matteo Postinghel</a> 
-            <!-- <p x-show="showAbout" x-cloak x-transition.opacity.duration.150ms >{t("nav.year")} {age}</p>
-            <p x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="col-span-2">{t("nav.from")}</p>
-            <p x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="col-span-2">{t("nav.location")}</p> -->
-            <div class="sm:hidden">
-                <LanguageSwitcher showCurrent={true} labels={{ en: "EN", it: "IT" }} />
-            </div>
-            
-         <div x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="max-sm:space-y-1 max-w-screen-lg">
-             <div class="grid grid-cols-1 sm:grid-cols-9">
-                <p class="col-span-9">{age} years old Communication Designer from Munich, Germany based in Milan, Italy.</p>
+        <div class="grid grid-cols-9">
+            <div class="col-span-2"><a @click="showAbout = !showAbout" class="cursor-pointer sm:hover:opacity-40 transition-opacity ">Matteo Postinghel</a></div>
+            <p x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="col-span-7">{age} years old Communication Designer from Munich, Germany based in Milan, Italy.</p>
+        </div>
+
+        <div x-show="showAbout" x-cloak x-transition.opacity.duration.150ms class="space-y-2 mt-2">
+             <div class="grid grid-cols-9">
+                <p class="col-span-2">{t("about.experience.0")}</p>
+                <p class="col-span-7">{t("about.experience.1")}<a href="https://propp.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity">Propp Studio</a> [2024-{t("about.ongoing")}]</p>
+                <p class="col-span-2"></p>
+                <p class="col-span-7">{t("about.experience.2")}<a href="https://100km.studio/" target="_blank" class="sm:hover:opacity-40 transition-opacity">100km Studio</a> [2021-2022]</p>
+                <p class="col-span-2"></p>
+                <p class="col-span-7">{t("about.experience.3")}<a href="https://www.labirinto.net/" target="_blank" class="sm:hover:opacity-40 transition-opacity">Labirinto</a> [2019]</p>
              </div>
-             <br>
-             <div class="grid grid-cols-3 sm:grid-cols-9">
-                <p class="col-span-1 sm:col-span-2">Experience:</p>
-                <p class="col-span-2 sm:col-span-7">Interaction designer intern at <a href="https://propp.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity">Propp Studio</a> [2024-ongoing]</p>
-                <p class="col-span-1 sm:col-span-2"></p>
-                <p class="col-span-2 sm:col-span-7">Graphic designer intern at <a href="https://propp.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity">100km Studio</a> [2021-2022]</p>
-                <p class="col-span-1 sm:col-span-2"></p>
-                <p class="col-span-2 sm:col-span-7">Graphic designer intern at <a href="https://propp.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity">Labirinto</a> [2019]</p>
+             <div class="grid grid-cols-9">
+                <p class="col-span-2">{t("about.education.0")}</p>
+                <p class="col-span-7">{t("about.education.1")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity">Politecnico di Milano</a> [2024-{t("about.ongoing")}]</p>
+                <p class="col-span-2"></p>
+                <p class="col-span-7">{t("about.education.2")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity">Politecnico di Milano</a> [2021-2024]</p>
+                <p class="col-span-2"></p>
+                <p class="col-span-7">{t("about.education.3")}<a href="https://www.wdka.nl/programmes/transformation-design" target="_blank" class="sm:hover:opacity-40 transition-opacity">Willem de Kooning Academy</a> [2020-2021]</p>
              </div>
-             <br>
-             <div class="grid grid-cols-3 sm:grid-cols-9">
-                <p class="col-span-1 sm:col-span-2">Education:</p>
-                <p class="col-span-2 sm:col-span-7">Interaction designer intern at <a href="https://propp.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity">Propp Studio</a> [2024-ongoing]</p>
-                <p class="col-span-1 sm:col-span-2"></p>
-                <p class="col-span-2 sm:col-span-7">MA, Communication design at <a href="https://propp.it/" target="_blank" class="sm:hover:opacity-40 transition-opacity">Politecnico di Milano</a> [2021-2022]</p>
+             <div class="grid grid-cols-9">
+                <p class="col-span-2">{t("about.languages.0")}</p>
+                <p class="col-span-7">{t("about.languages.1")} (C2), {t("about.languages.2")} (C2), {t("about.languages.3")} (C2), {t("about.languages.4")} (C1)</p>
              </div>
-             <div class="sm:hidden space-y-1">
-                 <br>
-                 <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Email</a></div>
-                 <div><a href="https://www.linkedin.com/in/matteo-postinghel/" class="hover:opacity-40 transition-opacity" target="_blank">LinkedIn</a></div>
-                 <div><a href="https://www.instagram.com/matteo.post/" class="hover:opacity-40 transition-opacity" target="_blank">Instagram</a></div>
-                 <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Curriculum</a></div>
+             <div class="grid grid-cols-9">
+                <p class="col-span-2">{t("about.exhibition.0")}</p>
+                <p class="col-span-7">{t("about.exhibition.1")}<a href="http://rawscenarios.labsintesi-c1.info/" target="_blank"class="sm:hover:opacity-40 transition-opacity">Raw Scenarios</a>{t("about.exhibition.2")}<a href="https://www.dotdotdot.it/" target="_blank"class="sm:hover:opacity-40 transition-opacity">DotDotDot</a></p>
              </div>
          </div>
 
@@ -91,8 +70,8 @@ if (isBeforeBirthdayThisYear) {
     </div>
 
 
-    <div class="col-span-2 sm:col-span-2 max-sm:hidden sm:flex items-center text-white mix-blend-difference relative">
-        <LanguageSwitcher showCurrent={true} labels={{ en: "EN", it: "IT" }} />
+    <div class="col-span-2 items-center text-white mix-blend-difference relative">
+        <LanguageSwitcher1 showCurrent={true} labels={{ en: "EN", it: "IT" }} />
 
     </div>
 

@@ -9,13 +9,36 @@
 		}
 	}, 
 	"nav": {
-	  "year": "Alter:",
-	  "from": "Herkunft: München, Deutschland",
-	  "location": "Standort: Mailand, Italien",
-	  "profession": "Beruf: Kommunikationsdesigner",
-	  "currently": "Derzeit: Master in Kommunikationsdesign, Politecnico di Milano - ",
 	  "contact": "Kontakt",
 	  "cookie": "Durch das Browsen auf dieser Website akzeptieren Sie automatisch Cookies."
+	},
+	"about": {
+		"age": "Jahre alter Kommunikationsdesigner aus München, Deutschland mit Wohnsitz in Mailand, Italien.",
+		"ongoing": "aktuell",
+		"experience": [
+			"Erfahrung:",
+			"Praktikant als Interaction Designer bei ",
+			"Praktikant als Grafikdesigner bei ",
+			"Praktikant als Grafikdesigner bei "
+		],
+		"education": [
+			"Ausbildung:",
+			"MA in Kommunikationsdesign im ",
+			"BA in Kommunikationsdesign im ",
+			"MA in Transformationsdesign an der "
+		],
+		"languages": [
+			"Sprachen:",
+			"Französisch",
+			"Deutsch",
+			"Italienisch",
+			"Englisch"
+		],
+		"exhibition": [
+			"Ausstellung:",
+			"Vertretet in ",
+			", bei "
+		]
 	},
 	"projects": [
 	  { "Title": "Energyoo", "Category": "Visuelle Identität", "year": "2024", "description": "Branding für ein Startup mit nachhaltigen, austauschbaren Batterien."},

@@ -9,13 +9,36 @@
 			}
 		},
 	"nav": {
-	  "year": "Years:",
-	  "from": "From: Munich, Germany",
-	  "location": "Location: Milan, Italy",
-	  "profession": "Profession: Communication Designer",
-	  "currently": "Currently: MA Communication Design, Politecnico di Milano - ",
 	  "contact": "Contact",
 	  "cookie": "By browsing this site, you automatically accept cookies."
+	},
+	"about":{
+		"age": "years old Communication Designer from Munich, Germany based in Milan, Italy.",
+		"ongoing": "ongoing",
+		"experience": [
+			"Experience:",
+			"Interaction designer intern at ",
+			"Graphic designer intern at ",
+			"Graphic designer intern at "
+		],
+		"education": [
+			"Education:",
+			"MA, Communication design at ",
+			"BA, Communication design at ",
+			"MA, Transformation design at "
+		],
+		"languages": [
+			"Languages:",
+			"French",
+			"German",
+			"Italian",
+			"English"
+		],
+		"exhibition": [
+			"Exhibition",
+			"Featured in ",
+			", at "
+		]
 	},
 	"projects": [
 	  { "Title": "Energyoo", "Category": "Visual Identity", "year": "2024", "description": "Branding for a startup focused on sustainable, interchangeable batteries."},

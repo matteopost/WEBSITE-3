@@ -9,13 +9,36 @@
 		}
 	}, 
 	"nav": {
-	  "year": "Anni:",
-	  "from": "Da: Monaco, Germania",
-	  "location": "Luogo: Milano, Italia",
-	  "profession": "Professione: Designer della comunicazione",
-	  "currently": "Attualmente: Master in Design della Comunicazione, Politecnico di Milano -",
 	  "contact": "Contatto",
 	  "cookie": "Navigando su questo sito, accetti automaticamente i cookie."
+	},
+	"about": {
+		"age": "anni, Communication Designer di Monaco di Baviera, Germania, con sede a Milano, Italia.",
+		"ongoing": "in corso",
+		"experience": [
+			"Esperienza:",
+			"Tirocinante Interaction designer presso ",
+			"Tirocinante Graphic designer presso ",
+			"Tirocinante Graphic designer presso "
+		],
+		"education": [
+			"Formazione:",
+			"MA, Design della Comunicazione ",
+			"BA, Design della Comunicazione ",
+			"MA, Design della Trasformazione presso "
+		],
+		"languages": [
+			"Lingue:",
+			"Francese",
+			"Tedesco",
+			"Italiano",
+			"Inglese"
+		],
+		"exhibition": [
+			"Mostra:",
+			"Presente in ",
+			", presso "
+		]
 	},
 	"projects": [
 	  { "Title": "Energyoo", "Category": "Identità Visiva", "year": "2024",  "description": "Branding per una startup di batterie intercambiabili e sostenibili."},
