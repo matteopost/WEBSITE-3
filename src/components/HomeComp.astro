@@ -17,16 +17,18 @@ interface Props {
 
 const { Title, num, year, Category, images = [], video = [], description, link, linkText, collaborators = [] } = Astro.props;
 
-type MediaType = 'video' | 'image';
-type MediaItem = { type: MediaType; src: string }; 
+// type MediaType = 'video' | 'image';
+// type MediaItem = { type: MediaType; src: string }; 
+
+// const combinedMedia: MediaItem[] = [
+//     ...video.map((v) => ({ type: 'video', src: v })),
+//     ...images.map((i) => ({ type: 'image', src: i })),
+// ];
 
 
-const combinedMedia: MediaItem[] = [
-    ...video.map((v) => ({ type: 'video' as const, src: v })),
-    ...images.map((i) => ({ type: 'image' as const, src: i })),
-];
+const combinedMedia = [...video.map(v => ({ type: 'video', src: v })), ...images.map(i => ({ type: 'image', src: i }))];
 
-
+type MediaItem = { type: 'video' | 'image'; src: string };
 
 function shuffleArray(array: MediaItem[]): MediaItem[] {
     for (let i = array.length - 1; i > 0; i--) {
@@ -58,19 +60,9 @@ const shuffledMedia = shuffleArray(combinedMedia);
         x-transition:leave-end="transform -translate-x-full opacity-0"
         class="flex overflow-x-auto gap-2 no-scrollbar">
         
-        {shuffledMedia.map((media, index) => (
-            media.type === 'image' ? (
-                <Image 
-                    src={media.src} 
-                    alt={`Image ${index + 1}`} 
-                    width={1080} 
-                    height={1080} 
-                    format="webp"
-                    loading="eager"
-                    class="aspect-video object-cover max-md:w-[90%] md:h-[250px] lg:h-[300px] xl:h-[350px]" 
-                />
-            ) : (
-            <video 
+        {combinedMedia.map((media, index) => (
+            media.type === 'video' ? (
+                <video 
                     src={media.src} 
                     muted 
                     autoplay 
@@ -78,11 +70,41 @@ const shuffledMedia = shuffleArray(combinedMedia);
                     playsinline 
                     class="aspect-video object-cover max-md:w-[90%] md:h-[250px] lg:h-[300px] xl:h-[350px]" 
                 ></video>
+            ) : (
+                <Image 
+                    src={media.src} 
+                    alt={`Image ${index + 1}`} 
+                    width={720} 
+                    height={720} 
+                    format="webp"
+                    loading="eager"
+                    class="aspect-video object-cover max-md:w-[90%] md:h-[250px] lg:h-[300px] xl:h-[350px]" 
+                />
             )
         ))}
 
+        <!-- {video?.map((img, index) => (
+                <video 
+                    src={video.src} 
+                    muted 
+                    autoplay 
+                    loop 
+                    playsinline 
+                    class="aspect-video object-cover max-md:w-[90%] md:h-[250px] lg:h-[300px] xl:h-[350px]" 
+                ></video>
+        ))}
 
-        
+        {images?.map((img, index) => (
+            <Image 
+                src={img} 
+                alt={`Image ${index + 1}`} 
+                width={720} 
+                height={720} 
+                format="webp"
+                class="aspect-video object-cover max-sm:w-[90%] sm:h-[250px] lg:h-[300px] xl:h-[350px]" 
+            />
+        ))} -->
+
         <div class="w-full md:w-[calc(100%*(11/12))] flex flex-shrink-0 whitespace-nowrap">
             <div class="whitespace-normal break-words max-w-[45%] md:max-w-[50%]">
                 <p>{description}</p>
@@ -111,8 +133,6 @@ const shuffledMedia = shuffleArray(combinedMedia);
         </div>   
     </div>
 </div>
-
-
 
 <script is:inline>
     document.addEventListener('DOMContentLoaded', function() {
@@ -143,4 +163,3 @@ const shuffledMedia = shuffleArray(combinedMedia);
         }
     });
 </script>
-
