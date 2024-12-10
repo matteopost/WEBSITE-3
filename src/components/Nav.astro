@@ -129,6 +129,7 @@ if (isBeforeBirthdayThisYear) {
                 </div>
                 <div class="col-span-2"></div>
                 <p x-show="showAbout" 
+                @click.away="showAbout = false"  
                 x-cloak 
                 x-transition:enter="transition transform ease-out duration-300"
                 x-transition:enter-start="-translate-y-1 opacity-50"
