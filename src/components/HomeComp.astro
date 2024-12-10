@@ -67,7 +67,7 @@ const shuffledMedia = shuffleArray(combinedMedia);
                     height={1080} 
                     format="webp"
                     loading="eager"
-                    class="aspect-video object-cover max-md:w-[95%] md:h-[250px] lg:h-[300px] xl:h-[350px]" 
+                    class="aspect-video object-cover max-md:w-[90%] md:h-[250px] lg:h-[300px] xl:h-[350px]" 
                 />
             ) : (
             <video 
@@ -76,7 +76,7 @@ const shuffledMedia = shuffleArray(combinedMedia);
                     autoplay 
                     loop 
                     playsinline 
-                    class="aspect-video object-cover max-md:w-[95%] md:h-[250px] lg:h-[300px] xl:h-[350px]" 
+                    class="aspect-video object-cover max-md:w-[90%] md:h-[250px] lg:h-[300px] xl:h-[350px]" 
                 ></video>
             )
         ))}
@@ -86,10 +86,9 @@ const shuffledMedia = shuffleArray(combinedMedia);
         <div class="w-full md:w-[calc(100%*(11/12))] flex flex-shrink-0 whitespace-nowrap">
             <div class="whitespace-normal break-words max-w-[45%] md:max-w-[50%]">
                 <p>{description}</p>
-                <br>
                 {link && (
                     <a href={link} target="_blank" class="hover:opacity-40 transition-opacity whitespace-nowrap">
-                        {linkText}
+                        &rarr; {linkText}
                     </a>
                 )}
             </div>
