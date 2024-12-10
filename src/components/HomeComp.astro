@@ -83,17 +83,16 @@ const { Title, num, year, Category, images = [], video = [], description, link, 
             )
         ))} -->
 
-        {video?.map((img, index) => (
-                <video 
-                    src={video.src} 
-                    muted 
-                    autoplay 
-                    loop 
-                    playsinline 
-                    class="aspect-video object-cover max-md:w-[90%] md:h-[250px] lg:h-[300px] xl:h-[350px]" 
-                ></video>
+        {video?.map((src, index) => (
+            <video 
+                src={src} 
+                muted 
+                autoplay 
+                loop 
+                playsinline 
+                class="aspect-video object-cover max-md:w-[90%] md:h-[250px] lg:h-[300px] xl:h-[350px]" 
+            ></video>
         ))}
-
         {images?.map((img, index) => (
             <Image 
                 src={img} 
