@@ -26,19 +26,19 @@ const { Title, num, year, Category, images = [], video = [], description, link, 
 // ];
 
 
-const combinedMedia = [...video.map(v => ({ type: 'video', src: v })), ...images.map(i => ({ type: 'image', src: i }))];
+// const combinedMedia = [...video.map(v => ({ type: 'video', src: v })), ...images.map(i => ({ type: 'image', src: i }))];
 
-type MediaItem = { type: 'video' | 'image'; src: string };
+// type MediaItem = { type: 'video' | 'image'; src: string };
 
-function shuffleArray(array: MediaItem[]): MediaItem[] {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
+// function shuffleArray(array: MediaItem[]): MediaItem[] {
+//     for (let i = array.length - 1; i > 0; i--) {
+//         const j = Math.floor(Math.random() * (i + 1));
+//         [array[i], array[j]] = [array[j], array[i]];
+//     }
+//     return array;
+// }
 
-const shuffledMedia = shuffleArray(combinedMedia);
+// const shuffledMedia = shuffleArray(combinedMedia);
 ---
 
 <div x-data="{ openGallery: false }" class="group no-scrollbar">
@@ -60,7 +60,7 @@ const shuffledMedia = shuffleArray(combinedMedia);
         x-transition:leave-end="transform -translate-x-full opacity-0"
         class="flex overflow-x-auto gap-2 no-scrollbar">
         
-        {combinedMedia.map((media, index) => (
+        <!-- {combinedMedia.map((media, index) => (
             media.type === 'video' ? (
                 <video 
                     src={media.src} 
@@ -81,9 +81,9 @@ const shuffledMedia = shuffleArray(combinedMedia);
                     class="aspect-video object-cover max-md:w-[90%] md:h-[250px] lg:h-[300px] xl:h-[350px]" 
                 />
             )
-        ))}
+        ))} -->
 
-        <!-- {video?.map((img, index) => (
+        {video?.map((img, index) => (
                 <video 
                     src={video.src} 
                     muted 
@@ -103,7 +103,7 @@ const shuffledMedia = shuffleArray(combinedMedia);
                 format="webp"
                 class="aspect-video object-cover max-sm:w-[90%] sm:h-[250px] lg:h-[300px] xl:h-[350px]" 
             />
-        ))} -->
+        ))}
 
         <div class="w-full md:w-[calc(100%*(11/12))] flex flex-shrink-0 whitespace-nowrap">
             <div class="whitespace-normal break-words max-w-[45%] md:max-w-[50%]">
