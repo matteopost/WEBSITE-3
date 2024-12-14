@@ -15,6 +15,7 @@ import imgbyit3 from '../../src/assets/img/byit/BY_IT-MOCKUP-3.jpg';
 import imgbyit4 from '../../src/assets/img/byit/BY_IT-MOCKUP-4.jpg';
 import imgbyit5 from '../../src/assets/img/byit/BY_IT-MOCKUP-5.jpg';
 import imgbyit6 from '../../src/assets/img/byit/BY_IT-MOCKUP-6.jpg';
+import type { ACTION_ERROR_CODES } from "astro:actions";
 
 const projects = [
     { 
@@ -24,6 +25,9 @@ const projects = [
         images: [img1, img2, img3, img4, img5],
         description: t("projects.0.description"),
         link: "https://www.energyoo.com/",
+        video: [
+            './video/TP Alpi Treni.mp4',
+        ],
         linkText: "Energyoo",
         collaborators: []
     },
