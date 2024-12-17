@@ -19,16 +19,68 @@ import type { ACTION_ERROR_CODES } from "astro:actions";
 
 const projects = [
     { 
+        Title: t("projects.12.Title"), 
+        Category: t("projects.12.Category"), 
+        year: t("projects.12.year"), 
+        images: [img1, img2, img3, img4, img5],
+        description: t("projects.12.description"),
+        link: "",
+        video: [
+        ],
+        linkText: "",
+        collaborators: [
+            { name: "Pietro Buffa", link: "https://pietrobuffa.it/" },
+            { name: "Pierluigi Anselmi", link: "https://pietrobuffa.it/" },
+            { name: "Alessandro Busseni", link: "https://pietrobuffa.it/" },
+            { name: "Giada", link: "https://pietrobuffa.it/" },
+            { name: "Marco Gariele", link: "https://pietrobuffa.it/" },
+        ]
+    },
+    { 
+        Title: t("projects.11.Title"), 
+        Category: t("projects.11.Category"), 
+        year: t("projects.11.year"), 
+        images: [img1, img2, img3, img4, img5],
+        description: t("projects.11.description"),
+        link: "https://propp.it/",
+        video: [
+        ],
+        linkText: "Propp",
+        collaborators: [
+            { name: "Pietro Buffa", link: "https://pietrobuffa.it/" },
+            { name: "Pierluigi Anselmi", link: "https://pietrobuffa.it/" },
+            { name: "Alessandro Busseni", link: "https://pietrobuffa.it/" },
+            { name: "Giada", link: "https://pietrobuffa.it/" },
+            { name: "Marco Gariele", link: "https://pietrobuffa.it/" },
+            { name: "Giacomo Quinland", link: "https://pietrobuffa.it/" },
+            { name: "Beatrice", link: "https://pietrobuffa.it/" },
+        ]
+    },
+
+    { 
+        Title: t("projects.10.Title"), 
+        Category: t("projects.10.Category"), 
+        year: t("projects.10.year"), 
+        images: [img1, img2, img3, img4, img5],
+        description: t("projects.10.description"),
+        link: "https://propp.it/",
+        video: [
+            './video/TP Alpi Treni.mp4',
+            './video/TP Alpi Kaunertal Video.mp4',
+        ],
+        linkText: "Propp",
+        collaborators: [
+            { name: "Pietro Buffa", link: "https://pietrobuffa.it/" },
+        ]
+    },
+
+    { 
         Title: t("projects.0.Title"), 
         Category: t("projects.0.Category"), 
         year: t("projects.0.year"), 
         images: [img1, img2, img3, img4, img5],
         description: t("projects.0.description"),
         link: "https://www.energyoo.com/",
-        video: [
-            './video/TP Alpi Treni.mp4',
-            './video/TP Alpi Kaunertal Video.mp4',
-        ],
         linkText: "Energyoo",
         collaborators: []
     },
