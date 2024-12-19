@@ -109,9 +109,9 @@ const { Title, num, year, Category, images = [], video = [], description, link, 
 
         <div class="w-full md:w-[calc(100%*(11/12))] flex flex-shrink-0 whitespace-nowrap">
             <div class="whitespace-normal break-words max-w-[45%] md:max-w-[50%]">
-                <p>{description}</p>
+                <p class="opacity-50">{description}</p>
                 {link && (
-                    <a href={link} target="_blank" class="hover:opacity-40 transition-opacity whitespace-nowrap">
+                    <a href={link} target="_blank" class="opacity-50 hover:opacity-100 transition-opacity whitespace-nowrap">
                         &rarr; {linkText}
                     </a>
                 )}
@@ -119,10 +119,10 @@ const { Title, num, year, Category, images = [], video = [], description, link, 
             <div class="sticky left-1/2 md:left-[calc(100%*(9/12))] max-w-[45%] md:max-w-[calc(100%*(2/12))] top-0">
                 {collaborators?.length > 0 && (
                     <>
-                        <p>{t("index.collab")}:</p>
+                        <p class="opacity-50">{t("index.collab")}:</p>
                         {collaborators.map((collab) => (
                             collab.link ? (
-                                <a href={collab.link} target="_blank" class="block hover:opacity-40 transition-opacity">
+                                <a href={collab.link} target="_blank" class="block opacity-50 hover:opacity-100 transition-opacity">
                                     {collab.name}
                                 </a>
                             ) : (
@@ -151,13 +151,13 @@ const { Title, num, year, Category, images = [], video = [], description, link, 
                 infoElement.classList.add('transition-opacity');
 
                 linkElement.addEventListener('mouseenter', () => {
-                    infoElement.classList.add('opacity-40');
+                    infoElement.classList.add('opacity-50');
                     imgElement?.classList.remove('hidden');
                     imgElement?.classList.add('block');
                 });
 
                 linkElement.addEventListener('mouseleave', () => {
-                    infoElement.classList.remove('opacity-40');
+                    infoElement.classList.remove('opacity-50');
                     imgElement?.classList.remove('block');
                     imgElement?.classList.add('hidden');
                 });
