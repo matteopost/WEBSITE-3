@@ -54,6 +54,7 @@ const { Title, num, year, Category, images = [], video = [], description, link, 
     </div>
 
     <div x-show="openGallery" x-cloak 
+        @click.away="openGallery = false" 
         x-transition:enter="transition ease-out duration-500"
         x-transition:enter-start="transform translate-x-full opacity-40"
         x-transition:enter-end="transform translate-x-0 opacity-100"
