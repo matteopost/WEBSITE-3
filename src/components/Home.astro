@@ -9,13 +9,13 @@ import img3 from '../../src/assets/img/cremona/cremona_18.png';
 import img4 from '../../src/assets/img/cremona/cremona_15.png';
 import img5 from '../../src/assets/img/cremona/cremona_16.png';
 
-import imgKinesis1 from '../../src/assets/img/kinesis/Kinesis-01.png';
-import imgKinesis2 from '../../src/assets/img/kinesis/Kinesis-02.png';
-import imgKinesis3 from '../../src/assets/img/kinesis/Kinesis-06.png';
-import imgKinesis4 from '../../src/assets/img/kinesis/Kinesis-07.png';
-import imgKinesis5 from '../../src/assets/img/kinesis/Kinesis-08.png';
-import imgKinesis6 from '../../src/assets/img/kinesis/Kinesis-10.png';
-import imgKinesis7 from '../../src/assets/img/kinesis/Kinesis-21.png';
+import imgKinesis1 from '../../src/assets/img/kinesis/Kinesis-21.jpg';
+import imgKinesis2 from '../../src/assets/img/kinesis/Kinesis-02.jpg';
+import imgKinesis3 from '../../src/assets/img/kinesis/Kinesis-10.jpg';
+import imgKinesis4 from '../../src/assets/img/kinesis/Kinesis-07.jpg';
+import imgKinesis5 from '../../src/assets/img/kinesis/Kinesis-06.jpg';
+import imgKinesis6 from '../../src/assets/img/kinesis/Kinesis-08.jpg';
+import imgKinesis7 from '../../src/assets/img/kinesis/Kinesis-01.jpg';
 
 import imgbyit1 from '../../src/assets/img/byit/BY_IT-MOCKUP-1.jpg';
 import imgbyit2 from '../../src/assets/img/byit/BY_IT-MOCKUP-2.jpg';
@@ -271,7 +271,7 @@ const projects = [
                 description={project.description}
                 link={project.link}
                 linkText={project.linkText}
-                collaborators={project.collaborators}
+                collaborators={project.collaborators ?? []}
             />
         ))}
     </div>
