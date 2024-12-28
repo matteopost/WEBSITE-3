@@ -15,6 +15,20 @@
 	"about": {
 		"age": "ans, Communication Designer de Munich, Allemagne, basé à Milan, Italie.",
 		"ongoing": "en cours",
+		"months": [
+			"jan.",
+			"fév.",
+			"mar.",
+			"avr.",
+			"mai.",
+			"juin.",
+			"juil.",
+			"août.",
+			"sept.",
+			"oct.",
+			"nov.",
+			"déc."
+		],
 		"experience": [
 			"Expérience:",
 			"Stagiaire designer d'interaction chez ",
@@ -25,7 +39,7 @@
 			"Formation:",
 			"MA en Communication design à ",
 			"BA en Communication design à ",
-			"MA en Transformation design à "
+			"BA en Transformation design à "
 		],
 		"languages": [
 			"Langues:",

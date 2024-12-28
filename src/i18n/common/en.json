@@ -15,6 +15,20 @@
 	"about":{
 		"age": "years old Communication Designer from Munich, Germany based in Milan, Italy.",
 		"ongoing": "ongoing",
+		"months": [
+			"jan.",
+			"feb.",
+			"mar.",
+			"apr.",
+			"may.",
+			"jun.",
+			"jul.",
+			"aug.",
+			"sep.",
+			"oct.",
+			"nov.",
+			"dec."
+		],
 		"experience": [
 			"Experience:",
 			"Interaction designer intern at ",
@@ -25,7 +39,7 @@
 			"Education:",
 			"MA, Communication design at ",
 			"BA, Communication design at ",
-			"MA, Transformation design at "
+			"BA, Transformation design at "
 		],
 		"languages": [
 			"Languages:",

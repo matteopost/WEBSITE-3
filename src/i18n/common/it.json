@@ -15,6 +15,20 @@
 	"about": {
 		"age": "anni, Communication Designer di Monaco di Baviera, Germania, con sede a Milano, Italia.",
 		"ongoing": "in corso",
+		"months": [
+			"gen.",
+			"feb.",
+			"mar.",
+			"apr.",
+			"mag.",
+			"giu.",
+			"lug.",
+			"ago.",
+			"set.",
+			"ott.",
+			"nov.",
+			"dic."
+		],
 		"experience": [
 			"Esperienza:",
 			"Tirocinante Interaction designer presso ",
@@ -25,7 +39,7 @@
 			"Formazione:",
 			"MA, Design della Comunicazione ",
 			"BA, Design della Comunicazione ",
-			"MA, Design della Trasformazione presso "
+			"BA, Design della Trasformazione presso "
 		],
 		"languages": [
 			"Lingue:",

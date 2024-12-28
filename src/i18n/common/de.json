@@ -15,6 +15,20 @@
 	"about": {
 		"age": "Jahre alter Kommunikationsdesigner aus München, Deutschland mit Wohnsitz in Mailand, Italien.",
 		"ongoing": "aktuell",
+		"months": [
+			"jan.",
+			"feb.",
+			"mär.",
+			"apr.",
+			"mai.",
+			"jun.",
+			"jul.",
+			"aug.",
+			"sep.",
+			"okt.",
+			"nov.",
+			"dez."
+		],
 		"experience": [
 			"Erfahrung:",
 			"Praktikant als Interaction Designer bei ",
@@ -25,7 +39,7 @@
 			"Ausbildung:",
 			"MA in Kommunikationsdesign im ",
 			"BA in Kommunikationsdesign im ",
-			"MA in Transformationsdesign an der "
+			"BA in Transformationsdesign an der "
 		],
 		"languages": [
 			"Sprachen:",

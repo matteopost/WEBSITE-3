@@ -15,6 +15,21 @@ if (isBeforeBirthdayThisYear) {
 }
 ---
 
+<!-- x-cloak 
+x-transition:enter="transition transform ease-out duration-300"
+x-transition:enter-start="opacity-50"
+x-transition:enter-end="opacity-100"
+x-transition:leave="transition transform ease-in duration-200"
+x-transition:leave-start=" opacity-100"
+x-transition:leave-end="opacity-50" -->
+
+<!-- x-cloak 
+x-transition:enter="transition transform ease-out duration-300"
+x-transition:enter-start="-translate-y-1 opacity-50"
+x-transition:enter-end="translate-y-0 opacity-100"
+x-transition:leave="transition transform ease-in duration-200"
+x-transition:leave-start="translate-y-0 opacity-100"
+x-transition:leave-end="-translate-y-1 opacity-50" -->
 
 
 <nav x-data="{ showAbout: false }">
@@ -24,14 +39,6 @@ if (isBeforeBirthdayThisYear) {
             <div class="grid grid-cols-9">
                 <div class="col-span-2"><a @click="showAbout = !showAbout" class="cursor-pointer sm:hover:opacity-40 transition-opacity ">Matteo Postinghel</a></div>
                 <p x-show="showAbout" 
-                
-                x-cloak 
-                x-transition:enter="transition transform ease-out duration-300"
-                x-transition:enter-start="opacity-50"
-                x-transition:enter-end="opacity-100"
-                x-transition:leave="transition transform ease-in duration-200"
-                x-transition:leave-start=" opacity-100"
-                x-transition:leave-end="opacity-50"
                 class="col-span-7"
                 >
                     {age} years old Communication Designer from Munich, Germany based in Milan, Italy.</p>
@@ -39,29 +46,22 @@ if (isBeforeBirthdayThisYear) {
 
             <div 
             x-show="showAbout" 
-            x-cloak 
-            x-transition:enter="transition transform ease-out duration-300"
-            x-transition:enter-start="-translate-y-1 opacity-50"
-            x-transition:enter-end="translate-y-0 opacity-100"
-            x-transition:leave="transition transform ease-in duration-200"
-            x-transition:leave-start="translate-y-0 opacity-100"
-            x-transition:leave-end="-translate-y-1 opacity-50"
             class="space-y-2 mt-2">
                 <div class="grid grid-cols-9">
                     <p class="col-span-2">{t("about.experience.0")}</p>
-                    <p class="col-span-7">{t("about.experience.1")}<a href="https://propp.it/" target="_blank" class="hover:opacity-40 transition-opacity">Propp Studio</a> [feb. 2024 - dec. 2024]</p>
+                    <p class="col-span-7">{t("about.experience.1")}<a href="https://propp.it/" target="_blank" class="hover:opacity-40 transition-opacity">Propp Studio</a> [{t("about.months.1")} 2024 - {t("about.months.11")} 2024]</p>
                     <p class="col-span-2"></p>
-                    <p class="col-span-7">{t("about.experience.2")}<a href="https://100km.studio/" target="_blank" class="hover:opacity-40 transition-opacity">100km Studio</a> [2021-2022]</p>
+                    <p class="col-span-7">{t("about.experience.2")}<a href="https://100km.studio/" target="_blank" class="hover:opacity-40 transition-opacity">100km Studio</a> [{t("about.months.6")} 2021 - {t("about.months.8")} 2022]</p>
                     <p class="col-span-2"></p>
-                    <p class="col-span-7">{t("about.experience.3")}<a href="https://www.labirinto.net/" target="_blank" class="hover:opacity-40 transition-opacity">Labirinto</a> [2019]</p>
+                    <p class="col-span-7">{t("about.experience.3")}<a href="https://www.labirinto.net/" target="_blank" class="hover:opacity-40 transition-opacity">Labirinto</a> [{t("about.months.10")} 2019 - {t("about.months.10")} 2019]</p>
                 </div>
                 <div class="grid grid-cols-9">
                     <p class="col-span-2">{t("about.education.0")}</p>
-                    <p class="col-span-7">{t("about.education.1")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="hover:opacity-40 transition-opacity">Politecnico di Milano</a> [2024-{t("about.ongoing")}]</p>
+                    <p class="col-span-7">{t("about.education.1")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="hover:opacity-40 transition-opacity">Politecnico di Milano</a> [{t("about.months.8")} 2024 - {t("about.ongoing")}]</p>
                     <p class="col-span-2"></p>
-                    <p class="col-span-7">{t("about.education.2")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="hover:opacity-40 transition-opacity">Politecnico di Milano</a> [2021-2024]</p>
+                    <p class="col-span-7">{t("about.education.2")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="hover:opacity-40 transition-opacity">Politecnico di Milano</a> [{t("about.months.8")} 2021 - {t("about.months.7")} 2024]</p>
                     <p class="col-span-2"></p>
-                    <p class="col-span-7">{t("about.education.3")}<a href="https://www.wdka.nl/programmes/transformation-design" target="_blank" class="hover:opacity-40 transition-opacity">Willem de Kooning Academy</a> [2020-2021]</p>
+                    <p class="col-span-7">{t("about.education.3")}<a href="https://www.wdka.nl/programmes/transformation-design" target="_blank" class="hover:opacity-40 transition-opacity">Willem de Kooning Academy</a> [{t("about.months.8")} 2020 - {t("about.months.6")} 2021]</p>
                 </div>
                 <div class="grid grid-cols-9">
                     <p class="col-span-2">{t("about.languages.0")}</p>
@@ -103,14 +103,7 @@ if (isBeforeBirthdayThisYear) {
             </div>
             <div 
             x-show="showContact" 
-            @click.away="showContact = false" 
-            x-cloak 
-            x-transition:enter="transition transform ease-out duration-300"
-            x-transition:enter-start="-translate-y-1 opacity-50"
-            x-transition:enter-end="translate-y-0 opacity-100"
-            x-transition:leave="transition transform ease-in duration-200"
-            x-transition:leave-start="translate-y-0 opacity-100"
-            x-transition:leave-end="-translate-y-1 opacity-50"
+
             class="sm:text-right sm:ml-auto text-white mix-blend-difference z-40">
                 <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Email</a></div>
                 <div><a href="https://www.linkedin.com/in/matteo-postinghel/" class="hover:opacity-40 transition-opacity" target="_blank">LinkedIn</a></div>
@@ -120,6 +113,9 @@ if (isBeforeBirthdayThisYear) {
         </div>
     </div>
 
+
+
+    <!-- Mobile -->
     <div class="md:hidden grid grid-cols-4 w-full fixed px-2 pt-2 z-40 justify-between items-start text-white mix-blend-difference " transition:persist >
         <div class="col-span-4">
 
@@ -130,34 +126,20 @@ if (isBeforeBirthdayThisYear) {
                 </div>
                 <div class="col-span-2"></div>
                 <p x-show="showAbout" 
-                @click.away="showAbout = false"  
-                x-cloak 
-                x-transition:enter="transition transform ease-out duration-300"
-                x-transition:enter-start="-translate-y-1 opacity-50"
-                x-transition:enter-end="translate-y-0 opacity-100"
-                x-transition:leave="transition transform ease-in duration-200"
-                x-transition:leave-start="translate-y-0 opacity-100"
-                x-transition:leave-end="-translate-y-1 opacity-50"
                 class="col-span-2 mt-2">{age} years old Communication Designer from Munich, Germany based in Milan, Italy.</p>
             </div>
 
             <div 
             x-show="showAbout" 
             @click.away="showAbout = false"  
-            x-transition:enter="transition transform ease-out duration-300"
-            x-transition:enter-start="-translate-y-1 opacity-50"
-            x-transition:enter-end="translate-y-0 opacity-100"
-            x-transition:leave="transition transform ease-in duration-200"
-            x-transition:leave-start="translate-y-0 opacity-100"
-            x-transition:leave-end="-translate-y-1 opacity-50"
             class="space-y-2 my-2">
                 <div class="grid grid-cols-4">
                     <p class="col-span-2">{t("about.experience.0")}</p>
-                    <p class="col-span-2">{t("about.experience.1")}<a href="https://propp.it/" target="_blank" class="underline hover:no-underline transition-all">Propp Studio</a> [2024-{t("about.ongoing")}]</p>
+                    <p class="col-span-2">{t("about.experience.1")}<a href="https://propp.it/" target="_blank" class="underline hover:no-underline transition-all">Propp Studio</a> [{t("about.months.1")} 2024 - {t("about.months.11")} 2024]</p>
                     <p class="col-span-2"></p>
-                    <p class="col-span-2">{t("about.experience.2")}<a href="https://100km.studio/" target="_blank" class="underline hover:no-underline transition-all">100km Studio</a> [2021-2022]</p>
+                    <p class="col-span-2">{t("about.experience.2")}<a href="https://100km.studio/" target="_blank" class="underline hover:no-underline transition-all">100km Studio</a> [{t("about.months.6")} 2021 - {t("about.months.8")} 2022]</p>
                     <p class="col-span-2"></p>
-                    <p class="col-span-2">{t("about.experience.3")}<a href="https://www.labirinto.net/" target="_blank" class="underline hover:no-underline transition-all">Labirinto</a> [2019]</p>
+                    <p class="col-span-2">{t("about.experience.3")}<a href="https://www.labirinto.net/" target="_blank" class="underline hover:no-underline transition-all">Labirinto</a> [{t("about.months.10")} 2019 - {t("about.months.10")} 2019]</p>
                 </div>
                 <div class="grid grid-cols-4">
                     <p class="col-span-2">{t("about.education.0")}</p>
