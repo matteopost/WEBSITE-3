@@ -18,6 +18,13 @@ import imgbyit6 from '../../src/assets/img/byit/BY_IT-MOCKUP-6.jpg';
 
 import videoKinesis from '../../src/assets/video/KINESIS VIDEO SITO.mp4';
 
+import videoTPAlpi1 from '../../src/assets/video/TP Alpi Treni.mp4';
+import videoTPAlpi2 from '../../src/assets/video/TP Alpi Kaunertal Video.mp4';
+
+import videoBYIT1 from '../../src/assets/video/byit-article-video-2.mp4';
+import videoBYIT2 from '../../src/assets/video/byit-article-video-1.mp4'; 
+import videoBYIT3 from '../../src/assets/video/byit-article-video-3.mp4';
+
 import type { ACTION_ERROR_CODES } from "astro:actions";
 
 const projects = [
@@ -70,8 +77,8 @@ const projects = [
         description: t("projects.10.description"),
         link: "https://propp.it/",
         video: [
-            '../../src/assets/video/TP Alpi Treni.mp4',
-            '../../src/assets/video/TP Alpi Kaunertal Video.mp4',
+            videoTPAlpi1,
+            videoTPAlpi2,
         ],
         linkText: "Propp",
         collaborators: [
@@ -96,9 +103,9 @@ const projects = [
         year: t("projects.1.year"), 
         images: [imgbyit1, imgbyit2, imgbyit3, imgbyit4, imgbyit5, imgbyit6],
         video: [
-            '../../src/assets/video/byit-article-video-2.mp4',
-            '../../src/assets/video/byit-article-video-1.mp4', 
-            '../../src/assets/video/byit-article-video-3.mp4',
+            videoBYIT1,
+            videoBYIT2,
+            videoBYIT3,
         ],
         description: t("projects.1.description"),
         link: "https://rosalia-pansida.webflow.io/",
