@@ -62,7 +62,7 @@ const { Title, num, year, Category, images = [], video = [], description, link, 
 
 
     <div x-show="openGallery" x-cloak 
-        @click.away="openGallery = false"   
+        @click.outside="openGallery = false"   
         class="flex overflow-x-auto gap-2 no-scrollbar mb-2">
         
         <!-- {combinedMedia.map((media, index) => (
