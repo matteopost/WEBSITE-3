@@ -33,7 +33,7 @@ x-transition:leave-end="-translate-y-1 opacity-50" -->
 
 
 <nav x-data="{ showAbout: false }">
-    <div class="max-md:hidden grid grid-cols-12 w-full fixed px-2 pt-2 z-40 justify-between items-start text-white mix-blend-difference " transition:persist >
+    <div class="max-md:hidden grid grid-cols-12 gap-1 w-full fixed px-2 pt-2 z-40 justify-between items-start text-white mix-blend-difference " transition:persist >
         <div  class="col-span-9 ">
 
             <div class="grid grid-cols-9">
@@ -46,22 +46,22 @@ x-transition:leave-end="-translate-y-1 opacity-50" -->
 
             <div 
             x-show="showAbout" 
-            class="space-y-2 mt-2">
+            class="space-y-2 mt-2 hyphens-auto text-pretty">
                 <div class="grid grid-cols-9">
                     <p class="col-span-2">{t("about.experience.0")}</p>
-                    <p class="col-span-7">{t("about.experience.1")}<a href="https://propp.it/" target="_blank" class="hover:opacity-40 transition-opacity">Propp Studio</a> [{t("about.months.1")} 2024 - {t("about.months.11")} 2024]</p>
+                    <p class="col-span-7">{t("about.experience.1")}<a href="https://propp.it/" target="_blank" class="hover:opacity-40 transition-opacity hyphens-none">Propp Studio</a> [{t("about.months.1")} 2024 - {t("about.months.11")} 2024]</p>
                     <p class="col-span-2"></p>
-                    <p class="col-span-7">{t("about.experience.2")}<a href="https://100km.studio/" target="_blank" class="hover:opacity-40 transition-opacity">100km Studio</a> [{t("about.months.6")} 2021 - {t("about.months.8")} 2022]</p>
+                    <p class="col-span-7">{t("about.experience.2")}<a href="https://100km.studio/" target="_blank" class="hover:opacity-40 transition-opacity hyphens-none">100km Studio</a> [{t("about.months.6")} 2021 - {t("about.months.8")} 2022]</p>
                     <p class="col-span-2"></p>
-                    <p class="col-span-7">{t("about.experience.3")}<a href="https://www.labirinto.net/" target="_blank" class="hover:opacity-40 transition-opacity">Labirinto</a> [{t("about.months.10")} 2019 - {t("about.months.10")} 2019]</p>
+                    <p class="col-span-7">{t("about.experience.3")}<a href="https://www.labirinto.net/" target="_blank" class="hover:opacity-40 transition-opacity hyphens-none">Labirinto</a> [{t("about.months.10")} 2019 - {t("about.months.10")} 2019]</p>
                 </div>
                 <div class="grid grid-cols-9">
                     <p class="col-span-2">{t("about.education.0")}</p>
-                    <p class="col-span-7">{t("about.education.1")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="hover:opacity-40 transition-opacity">Politecnico di Milano</a> [{t("about.months.8")} 2024 - {t("about.ongoing")}]</p>
+                    <p class="col-span-7">{t("about.education.1")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="hover:opacity-40 transition-opacity hyphens-none">Politecnico di Milano</a> [{t("about.months.8")} 2024 - {t("about.ongoing")}]</p>
                     <p class="col-span-2"></p>
-                    <p class="col-span-7">{t("about.education.2")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="hover:opacity-40 transition-opacity">Politecnico di Milano</a> [{t("about.months.8")} 2021 - {t("about.months.7")} 2024]</p>
+                    <p class="col-span-7">{t("about.education.2")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="hover:opacity-40 transition-opacity hyphens-none">Politecnico di Milano</a> [{t("about.months.8")} 2021 - {t("about.months.7")} 2024]</p>
                     <p class="col-span-2"></p>
-                    <p class="col-span-7">{t("about.education.3")}<a href="https://www.wdka.nl/programmes/transformation-design" target="_blank" class="hover:opacity-40 transition-opacity">Willem de Kooning Academy</a> [{t("about.months.8")} 2020 - {t("about.months.6")} 2021]</p>
+                    <p class="col-span-7">{t("about.education.3")}<a href="https://www.wdka.nl/programmes/transformation-design" target="_blank" class="hover:opacity-40 transition-opacity hyphens-none">Willem de Kooning Academy</a> [{t("about.months.8")} 2020 - {t("about.months.6")} 2021]</p>
                 </div>
                 <div class="grid grid-cols-9">
                     <p class="col-span-2">{t("about.languages.0")}</p>
@@ -136,7 +136,7 @@ x-transition:leave-end="-translate-y-1 opacity-50" -->
                 <div class="grid grid-cols-4" x-data="{ showMore1: false }">
                     <p class="col-span-2">{t("about.experience.0")}</p>
                     <p class="col-span-2">{t("about.experience.1")}
-                        <a href="https://propp.it/" target="_blank" class="underline hover:no-underline transition-all">
+                        <a href="https://propp.it/" target="_blank" class="underline hover:no-underline transition-all hyphens-none">
                             Propp Studio
                         </a> 
                         [{t("about.months.1")} 2024 - {t("about.months.11")} 2024]
@@ -146,24 +146,24 @@ x-transition:leave-end="-translate-y-1 opacity-50" -->
                     @click.away="showMore1 = false"  
                     >
                     <p class="col-span-2"></p>
-                    <p class="col-span-2">{t("about.experience.2")}<a href="https://100km.studio/" target="_blank" class="underline hover:no-underline transition-all">100km Studio</a> [{t("about.months.6")} 2021 - {t("about.months.8")} 2022]</p>
+                    <p class="col-span-2">{t("about.experience.2")}<a href="https://100km.studio/" target="_blank" class="underline hover:no-underline transition-all hyphens-none">100km Studio</a> [{t("about.months.6")} 2021 - {t("about.months.8")} 2022]</p>
                     <p class="col-span-2"></p>
-                    <p class="col-span-2">{t("about.experience.3")}<a href="https://www.labirinto.net/" target="_blank" class="underline hover:no-underline transition-all">Labirinto</a> [{t("about.months.10")} 2019 - {t("about.months.10")} 2019]</p>
+                    <p class="col-span-2">{t("about.experience.3")}<a href="https://www.labirinto.net/" target="_blank" class="underline hover:no-underline transition-all hyphens-none">Labirinto</a> [{t("about.months.10")} 2019 - {t("about.months.10")} 2019]</p>
                     </div>
                     <div class="col-span-2"></div>
                     <div class="opacity-50 hover:opacity-100 transition-opacity cursor-pointer" @click="showMore1 = !showMore1"><span x-text="showMore1 ? '-' : '+'"></span></div>
                 </div>
                 <div class="grid grid-cols-4" x-data="{ showMore2: false }">
                     <p class="col-span-2">{t("about.education.0")}</p>
-                    <p class="col-span-2">{t("about.education.1")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="underline hover:no-underline transition-all">Politecnico di Milano</a> [{t("about.months.8")} 2024 - {t("about.ongoing")}]</p>
+                    <p class="col-span-2">{t("about.education.1")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="underline hover:no-underline transition-all hyphens-none">Politecnico di Milano</a> [{t("about.months.8")} 2024 - {t("about.ongoing")}]</p>
                     <div class="grid grid-cols-4 col-span-4" 
                     x-show="showMore2" 
                     @click.away="showMore2 = false"  
                     >
                     <p class="col-span-2"></p>
-                    <p class="col-span-2">{t("about.education.2")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="underline hover:no-underline transition-all"> [{t("about.months.8")} 2021 - {t("about.months.7")} 2024]</p>
+                    <p class="col-span-2">{t("about.education.2")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="underline hover:no-underline transition-all">Politecnico di Milano</a> [{t("about.months.8")} 2021 - {t("about.months.7")} 2024]</p>
                     <p class="col-span-2"></p>
-                    <p class="col-span-2">{t("about.education.3")}<a href="https://www.wdka.nl/programmes/transformation-design" target="_blank" class="underline hover:no-underline transition-all"> [{t("about.months.8")} 2020 - {t("about.months.6")} 2021]</p>
+                    <p class="col-span-2">{t("about.education.3")}<a href="https://www.wdka.nl/programmes/transformation-design" target="_blank" class="underline hover:no-underline transition-all">Willem de Kooning Academy</a> [{t("about.months.8")} 2020 - {t("about.months.6")} 2021]</p>
                     </div>
                     <div class="col-span-2"></div>
                     <div class="opacity-50 hover:opacity-100 transition-opacity cursor-pointer" @click="showMore2 = !showMore2"><span x-text="showMore2 ? '-' : '+'"></span></div>

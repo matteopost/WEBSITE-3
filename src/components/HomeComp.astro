@@ -44,7 +44,7 @@ const { Title, num, year, Category, images = [], video = [], description, link, 
 <div x-data="{ openGallery: false }" class="group no-scrollbar max-md:mb-1">
     <!-- border-t border-black -->
 
-<div class="grid grid-cols-2 md:grid-cols-12 info leading-tight ">
+<div class="grid grid-cols-2 md:grid-cols-12 gap-1 info leading-tight ">
         <p class="col-span-1 ">[{num}]</p>
         <p class="col-span-1 md:col-span-8 cursor-pointer uppercase link" @click.prevent="openGallery = !openGallery">{Title}</p>
         <div class="col-span-1 md:hidden"></div>
@@ -111,7 +111,7 @@ const { Title, num, year, Category, images = [], video = [], description, link, 
         ))}
 
         <div class="w-full md:w-[calc(100%*(11/12))] flex flex-shrink-0 whitespace-nowrap">
-            <div class="whitespace-normal break-words max-w-[48%] md:max-w-[50%]">
+            <div class="whitespace-normal break-words max-w-[48%] md:w-[560px]">
                 <p class="opacity-50 hyphens-auto text-pretty">{description}</p>
                 {link && (
                     <a href={link} target="_blank" class="opacity-50 hover:opacity-100 transition-opacity whitespace-nowrap">
