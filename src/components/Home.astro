@@ -29,9 +29,11 @@ import videoKinesis from '../../src/assets/video/KINESIS VIDEO SITO.mp4';
 import videoTPAlpi1 from '../../src/assets/video/TP Alpi Treni.mp4';
 import videoTPAlpi2 from '../../src/assets/video/TP Alpi Kaunertal Video.mp4';
 
-import videoBYIT1 from '../../src/assets/video/byit-article-video-2.mp4';
-import videoBYIT2 from '../../src/assets/video/byit-article-video-1.mp4'; 
-import videoBYIT3 from '../../src/assets/video/byit-article-video-3.mp4';
+import videoBYIT1 from '../../src/assets/video/byit/byit-article-video-2.mp4';
+import videoBYIT2 from '../../src/assets/video/byit/byit-article-video-1.mp4'; 
+import videoBYIT3 from '../../src/assets/video/byit/byit-article-video-3.mp4';
+import videoBYIT4 from '../../src/assets/video/byit/BYIT VIDEO 1.mp4';
+import videoBYIT5 from '../../src/assets/video/byit/BYIT VIDEO 2.mp4';
 
 import type { ACTION_ERROR_CODES } from "astro:actions";
 
@@ -112,10 +114,12 @@ const projects = [
         Title: t("projects.1.Title"), 
         Category: t("projects.1.Category"), 
         year: t("projects.1.year"), 
-        images: [imgbyit1, imgbyit2, imgbyit3, imgbyit4, imgbyit5, imgbyit6],
+        images: [],
         video: [
             videoBYIT1,
+            videoBYIT4,
             videoBYIT2,
+            videoBYIT5,
             videoBYIT3,
         ],
         description: t("projects.1.description"),
