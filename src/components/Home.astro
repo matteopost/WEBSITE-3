@@ -17,17 +17,14 @@ import imgKinesis5 from '../../src/assets/img/kinesis/Kinesis-06.jpg';
 import imgKinesis6 from '../../src/assets/img/kinesis/Kinesis-08.jpg';
 import imgKinesis7 from '../../src/assets/img/kinesis/Kinesis-01.jpg';
 
+import videoKinesis from '../../src/assets/video/kinesis/KINESIS VIDEO SITO.mp4';
+
 import imgbyit1 from '../../src/assets/img/byit/BY_IT-MOCKUP-1.jpg';
 import imgbyit2 from '../../src/assets/img/byit/BY_IT-MOCKUP-2.jpg';
 import imgbyit3 from '../../src/assets/img/byit/BY_IT-MOCKUP-3.jpg';
 import imgbyit4 from '../../src/assets/img/byit/BY_IT-MOCKUP-4.jpg';
 import imgbyit5 from '../../src/assets/img/byit/BY_IT-MOCKUP-5.jpg';
 import imgbyit6 from '../../src/assets/img/byit/BY_IT-MOCKUP-6.jpg';
-
-import videoKinesis from '../../src/assets/video/KINESIS VIDEO SITO.mp4';
-
-import videoTPAlpi1 from '../../src/assets/video/TP Alpi Treni.mp4';
-import videoTPAlpi2 from '../../src/assets/video/TP Alpi Kaunertal Video.mp4';
 
 import videoBYIT1 from '../../src/assets/video/byit/byit-article-video-2.mp4';
 import videoBYIT2 from '../../src/assets/video/byit/byit-article-video-1.mp4'; 
@@ -36,6 +33,20 @@ import videoBYIT4 from '../../src/assets/video/byit/BYIT VIDEO 1.mp4';
 import videoBYIT5 from '../../src/assets/video/byit/BYIT VIDEO 2.mp4';
 import videoBYIT6 from '../../src/assets/video/byit/BYIT VIDEO 3.mp4';
 import videoBYIT7 from '../../src/assets/video/byit/BYIT VIDEO 4.mp4';
+
+import imgTP1 from '../../src/assets/img/tp/TP-Alpi-Slavc.png';
+import imgTP2 from '../../src/assets/img/tp/TP-Alpi-Monte-Bianco.png';
+import imgTP3 from '../../src/assets/img/tp/tp-londra-rer.png';
+import imgTP4 from '../../src/assets/img/tp/tp-londra-calcio-04.png';
+
+import videoTP1 from '../../src/assets/video/tp/TP Alpi Treni.mp4';
+import videoTP2 from '../../src/assets/video/tp/TP Alpi Kaunertal Video.mp4';
+import videoTP3 from '../../src/assets/video/tp/TP-Alpi-Cover.mp4';
+
+import videoRS1 from '../../src/assets/video/rawscenarios/VIDEO SITO RAWSCENARIOS 1.mp4'
+
+
+
 
 import type { ACTION_ERROR_CODES } from "astro:actions";
 
@@ -86,12 +97,13 @@ const projects = [
         Title: t("projects.10.Title"), 
         Category: t("projects.10.Category"), 
         year: t("projects.10.year"), 
-        images: [img1, img2, img3, img4, img5],
+        images: [imgTP1, imgTP2, imgTP3, imgTP4],
         description: t("projects.10.description"),
         link: "https://propp.it/",
         video: [
-            videoTPAlpi1,
-            videoTPAlpi2,
+            videoTP3,
+            videoTP1,
+            videoTP2,
         ],
         linkText: "Propp",
         collaborators: [
@@ -143,10 +155,13 @@ const projects = [
         Title: t("projects.2.Title"), 
         Category: t("projects.2.Category"), 
         year: t("projects.2.year"), 
-        images: [img1, img2, img3, img4, img5],
+        images: [],
+        video: [
+            videoRS1,
+        ],
         description: t("projects.1.description"),
-        link: "https://100km.studio/",
-        linkText: "100km studio",
+        link: "http://rawscenarios.labsintesi-c1.info/",
+        linkText: "RAWSCENARIOS",
         collaborators: [
             { name: "Caterina di Noia", link: "" },
         ]
