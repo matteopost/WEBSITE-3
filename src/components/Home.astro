@@ -44,8 +44,24 @@ import videoTP2 from '../../src/assets/video/tp/TP Alpi Kaunertal Video.mp4';
 import videoTP3 from '../../src/assets/video/tp/TP-Alpi-Cover.mp4';
 
 import videoRS1 from '../../src/assets/video/rawscenarios/VIDEO SITO RAWSCENARIOS 1.mp4'
+import videoRS2 from '../../src/assets/video/rawscenarios/VIDEO SITO RAWSCENARIOS 2.mp4'
+import videoRS3 from '../../src/assets/video/rawscenarios/VIDEO SITO RAWSCENARIOS 3.mp4'
 
+import imgNeptuna1 from '../../src/assets/img/neptuna/Neptuna_05.jpg';
+import imgNeptuna2 from '../../src/assets/img/neptuna/Neptuna_06.jpg';
 
+import videoNeptuna1 from '../../src/assets/video/neptuna/VIDEO NETPUNA SITO 1.mp4'
+import videoNeptuna2 from '../../src/assets/video/neptuna/VIDEO NETPUNA SITO 2.mp4'
+import videoNeptuna3 from '../../src/assets/video/neptuna/VIDEO NETPUNA SITO 3.mp4'
+import videoNeptuna4 from '../../src/assets/video/neptuna/VIDEO NETPUNA SITO 4.mp4'
+import videoNeptuna5 from '../../src/assets/video/neptuna/VIDEO NETPUNA SITO 5.mp4'
+import videoNeptuna6 from '../../src/assets/video/neptuna/VIDEO NETPUNA SITO 6.mp4'
+import videoNeptuna7 from '../../src/assets/video/neptuna/VIDEO NETPUNA SITO 7.mp4'
+import videoNeptuna8 from '../../src/assets/video/neptuna/VIDEO NETPUNA SITO 8.mp4'
+
+import imgMappaMilano1 from '../../src/assets/img/mappa_milano/mappa_milano_7.png';
+import imgMappaMilano2 from '../../src/assets/img/mappa_milano/mappa_milano_8.png';
+import imgMappaMilano3 from '../../src/assets/img/mappa_milano/mappa_milano_9.png';
 
 
 import type { ACTION_ERROR_CODES } from "astro:actions";
@@ -158,8 +174,10 @@ const projects = [
         images: [],
         video: [
             videoRS1,
+            videoRS2,
+            videoRS3,
         ],
-        description: t("projects.1.description"),
+        description: t("projects.2.description"),
         link: "http://rawscenarios.labsintesi-c1.info/",
         linkText: "RAWSCENARIOS",
         collaborators: [
@@ -184,7 +202,17 @@ const projects = [
         Title: t("projects.4.Title"), 
         Category: t("projects.4.Category"), 
         year: t("projects.4.year"), 
-        images: [img1, img2, img3, img4, img5],
+        images: [imgNeptuna1, imgNeptuna2],
+        video: [
+            videoNeptuna8,
+            videoNeptuna2,
+            videoNeptuna1,
+            videoNeptuna3,
+            videoNeptuna6,
+            videoNeptuna4,
+            videoNeptuna5,
+            videoNeptuna7,
+        ],
         description: t("projects.4.description"),
         link: "http://rawscenarios.labsintesi-c1.info/2024/Tuna/",
         linkText: "Neptuna - Raw Scenarios",
@@ -219,24 +247,8 @@ const projects = [
         Title: t("projects.6.Title"), 
         Category: t("projects.6.Category"), 
         year: t("projects.6.year"), 
-        images: [img1, img2, img3, img4, img5],
+        images: [imgMappaMilano2, imgMappaMilano3, imgMappaMilano1],
         description: t("projects.6.description"),
-        link: "",
-        linkText: "",
-        collaborators: [
-            { name: "Luigi Farrauto", link: "https://x.com/centochilometri" },
-            { name: "100km studio", link: "https://100km.studio/" },
-            
-        ]
-
-    },
-
-    { 
-        Title: t("projects.7.Title"), 
-        Category: t("projects.7.Category"), 
-        year: t("projects.7.year"), 
-        images: [img1, img2, img3, img4, img5],
-        description: t("projects.7.description"),
         link: "",
         linkText: "",
         collaborators: [
