@@ -67,6 +67,11 @@ import imgMappaMilano5 from '../../src/assets/img/mappa_milano/MILANO_mappa_2023
 import imgMappaMilano6 from '../../src/assets/img/mappa_milano/MILANO_mappa_2023_3.png';
 import imgMappaMilano7 from '../../src/assets/img/mappa_milano/MILANO_mappa_2023_4.png';
 
+import videoDSI1 from '../../src/assets/video/DSI/DESIGN SPAZIALE ITALIANO 1.mp4'
+import videoDSI2 from '../../src/assets/video/DSI/DESIGN SPAZIALE ITALIANO 2.mp4'
+import videoDSI3 from '../../src/assets/video/DSI/DESIGN SPAZIALE ITALIANO 3.mp4'
+import videoDSI4 from '../../src/assets/video/DSI/DESIGN SPAZIALE ITALIANO 4.mp4'
+
 
 import type { ACTION_ERROR_CODES } from "astro:actions";
 
@@ -95,10 +100,14 @@ const projects = [
         Title: t("projects.11.Title"), 
         Category: t("projects.11.Category"), 
         year: t("projects.11.year"), 
-        images: [img1, img2, img3, img4, img5],
+        images: [],
         description: t("projects.11.description"),
         link: "https://designspazialeitaliano.it/",
         video: [
+            videoDSI1,
+            videoDSI2,
+            videoDSI3,
+            videoDSI4,
         ],
         linkText: "Design Spaziale Italiano",
         collaborators: [
@@ -107,8 +116,8 @@ const projects = [
             { name: "Pietro Buffa", link: "https://pietrobuffa.it/" },
             { name: "Alessandro Busseni" , link: "" },
             { name: "Elisa Cappelletto", link: "https://www.instagram.com/elliscplt/" },
-            { name: "Giada Fiorenza", link: "https://www.instagram.com/giada.fiorenza/" },
             { name: "Marco Gariele", link: "https://www.instagram.com/marcobort/" },
+            { name: "Giada Fiorenza", link: "https://www.instagram.com/giada.fiorenza/" },
             { name: "Giacomo Quinland", link: "https://www.instagram.com/settetrequattro/" },
         ]
     },
