@@ -120,7 +120,7 @@ x-transition:leave-end="-translate-y-1 opacity-50" -->
         <div class="col-span-4">
 
             <div class="grid grid-cols-4">
-                <div class="col-span-2"><a @click="showAbout = !showAbout" class="cursor-pointer sm:hover:opacity-40 transition-opacity ">Matteo Postinghel</a></div>
+                <div class="col-span-2"><a @click="showAbout = !showAbout; window.scrollTo({ top: 0,})" class="cursor-pointer sm:hover:opacity-40 transition-opacity ">Matteo Postinghel</a></div>
                 <div class="items-center col-span-2 text-white mix-blend-difference relative">
                     <LanguageSwitcher2  showCurrent={true} labels={{ en: "EN", it: "IT" }}/>
                 </div>

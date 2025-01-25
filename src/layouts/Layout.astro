@@ -42,7 +42,6 @@ const { title } = Astro.props;
 		  AOS.init();
 		</script>
 
-		<!-- 
 		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-ZL76RB7TNY"></script>
 		<script is:inline>
 		  window.dataLayer = window.dataLayer || [];
@@ -50,7 +49,7 @@ const { title } = Astro.props;
 		  gtag('js', new Date());
 		  gtag('config', 'G-ZL76RB7TNY');
 		</script>
-		-->
+		
 	  
 		<ViewTransitions />
 	</head>
@@ -107,11 +106,17 @@ const { title } = Astro.props;
 		}
 		}
 </style>
-<script>
+<script is:inline>
 	document.addEventListener('alpine:init', () => {
 	  Alpine.store('openState', {
 		openCompNum: null, 
 	  });
 	});
+  </script>
+
+<script is:inline>
+	import Alpine from 'alpinejs';
+	window.Alpine = Alpine;
+	Alpine.start();
   </script>
   
