@@ -45,6 +45,7 @@ x-transition:leave-end="-translate-y-1 opacity-50" -->
             </div>
 
             <div 
+            x-cloak
             x-show="showAbout" 
             class="space-y-2 mt-2 hyphens-auto text-pretty">
                 <div class="grid grid-cols-9">
@@ -103,6 +104,7 @@ x-transition:leave-end="-translate-y-1 opacity-50" -->
             </div>
             <div 
             x-show="showContact" 
+            x-cloak
 
             class="sm:text-right sm:ml-auto text-white mix-blend-difference z-40">
                 <div><a href="mailto:matteopostinghel@icloud.com" class="hover:opacity-40 transition-opacity">Email</a></div>
@@ -130,6 +132,7 @@ x-transition:leave-end="-translate-y-1 opacity-50" -->
             </div>
 
             <div 
+            x-cloak
             x-show="showAbout" 
             @click.away="showAbout = false"  
             class="space-y-2 my-2 hyphens-auto text-pretty">
