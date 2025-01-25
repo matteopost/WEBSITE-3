@@ -78,6 +78,22 @@ import videoDSI2 from '../../src/assets/video/DSI/DESIGN SPAZIALE ITALIANO 2.mp4
 import videoDSI3 from '../../src/assets/video/DSI/DESIGN SPAZIALE ITALIANO 3.mp4'
 import videoDSI4 from '../../src/assets/video/DSI/DESIGN SPAZIALE ITALIANO 4.mp4'
 
+import imgNero1 from '../../src/assets/img/nero/nero-3.png';
+import imgNero2 from '../../src/assets/img/nero/nero_1.png';
+import imgNero3 from '../../src/assets/img/nero/nero-4.png';
+import imgNero4 from '../../src/assets/img/nero/nero-5.png';
+import imgNero5 from '../../src/assets/img/nero/nero-6.png';
+import imgNero6 from '../../src/assets/img/nero/nero-7.png';
+import imgNero7 from '../../src/assets/img/nero/nero-8.png';
+import imgNero8 from '../../src/assets/img/nero/nero-9.png';
+import imgNero9 from '../../src/assets/img/nero/nero-10.png';
+
+import videoNero1 from '../../src/assets/video/nero/NERO VIDEO 1.mp4'
+
+import imgAnatomia1 from '../../src/assets/img/anatomia/ANT-OCH_MCKP_01_1.png';
+import imgAnatomia2 from '../../src/assets/img/anatomia/ANT-OCH_MCKP_01_8.png';
+import imgAnatomia3 from '../../src/assets/img/anatomia/ANT-OCH_MCKP_04_2.png';
+import imgAnatomia4 from '../../src/assets/img/anatomia/ANT-OCH_MCKP_06_2.png';
 
 import type { ACTION_ERROR_CODES } from "astro:actions";
 
@@ -144,7 +160,6 @@ const projects = [
         collaborators: [
             { name: "Propp", link: "https://propp.it/" },
             { name: "Pietro Buffa", link: "https://pietrobuffa.it/" },
-            { name: "Tomo Tomo", link: "https://www.tomotomo.it/" },
         ]
     },
 
@@ -265,10 +280,10 @@ const projects = [
         Title: t("projects.8.Title"), 
         Category: t("projects.8.Category"), 
         year: t("projects.8.year"), 
-        images: [img1, img2, img3, img4, img5],
+        images: [imgAnatomia1, imgAnatomia2, imgAnatomia3, imgAnatomia4],
         description: t("projects.8.description"),
-        link: "",
-        linkText: "",
+        link: "https://anatomia-dell-orchestra.netlify.app/",
+        linkText: "Anatomia dell'Orchestra",
         collaborators: [
             { name: "Eva Cupellini", link: "https://www.instagram.com/eva.cupellini/" },
    
@@ -280,7 +295,8 @@ const projects = [
         Title: t("projects.9.Title"), 
         Category: t("projects.9.Category"), 
         year: t("projects.9.year"), 
-        images: [img1, img2, img3, img4, img5],
+        images: [imgNero1, imgNero2],
+        video: [videoNero1],
         description: t("projects.9.description"),
         link: "",
         linkText: "",
