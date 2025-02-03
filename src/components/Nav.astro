@@ -59,6 +59,8 @@ x-transition:leave-end="-translate-y-1 opacity-50" -->
                 </div>
                 <div class="grid grid-cols-9">
                     <p class="col-span-2">{t("about.education.0")}</p>
+                    <p class="col-span-7"><a href="https://www.asp-poli.it/" target="_blank" class="hover:opacity-40 transition-opacity hyphens-none">Alta Scuola Politecnica</a> [{t("about.months.1")} 2025 - {t("about.ongoing")}]</p>
+                    <p class="col-span-2"></p>
                     <p class="col-span-7">{t("about.education.1")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="hover:opacity-40 transition-opacity hyphens-none">Politecnico di Milano</a> [{t("about.months.8")} 2024 - {t("about.ongoing")}]</p>
                     <p class="col-span-2"></p>
                     <p class="col-span-7">{t("about.education.2")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="hover:opacity-40 transition-opacity hyphens-none">Politecnico di Milano</a> [{t("about.months.8")} 2021 - {t("about.months.7")} 2024]</p>
@@ -160,11 +162,14 @@ x-transition:leave-end="-translate-y-1 opacity-50" -->
                 </div>
                 <div class="grid grid-cols-4" x-data="{ showMore2: false }">
                     <p class="col-span-2">{t("about.education.0")}</p>
+                    <p class="col-span-2"><a href="https://www.asp-poli.it/" target="_blank" class="underline hover:no-underline transition-all hyphens-none">Alta Scuola Politecnica</a> [{t("about.months.1")} 2024 - {t("about.ongoing")}]</p>
+                    <p class="col-span-2"></p>
                     <p class="col-span-2">{t("about.education.1")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="underline hover:no-underline transition-all hyphens-none">Politecnico di Milano</a> [{t("about.months.8")} 2024 - {t("about.ongoing")}]</p>
                     <div class="grid grid-cols-4 col-span-4" 
                     x-show="showMore2" 
                     @click.away="showMore2 = false"  
                     >
+                    
                     <p class="col-span-2"></p>
                     <p class="col-span-2">{t("about.education.2")}<a href="https://www.designdellacomunicazione.polimi.it/" target="_blank" class="underline hover:no-underline transition-all">Politecnico di Milano</a> [{t("about.months.8")} 2021 - {t("about.months.7")} 2024]</p>
                     <p class="col-span-2"></p>
