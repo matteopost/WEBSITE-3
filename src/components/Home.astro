@@ -95,6 +95,16 @@ import imgAnatomia2 from '../../src/assets/img/anatomia/ANT-OCH_MCKP_01_8.png';
 import imgAnatomia3 from '../../src/assets/img/anatomia/ANT-OCH_MCKP_04_2.png';
 import imgAnatomia4 from '../../src/assets/img/anatomia/ANT-OCH_MCKP_06_2.png';
 
+import imgLodi1  from '../../src/assets/img/lodi/lodi_1.png';
+import imgLodi2  from '../../src/assets/img/lodi/lodi_2.png';
+import imgLodi3  from '../../src/assets/img/lodi/lodi_3.png';
+import imgLodi4  from '../../src/assets/img/lodi/lodi_4.png';
+import imgLodi5  from '../../src/assets/img/lodi/lodi_5.png';
+import imgLodi6  from '../../src/assets/img/lodi/lodi_6.png';
+import imgLodi8  from '../../src/assets/img/lodi/lodi_8.png';
+
+import videoLodi from '../../src/assets/video/lodi/lodi.mp4'
+
 import type { ACTION_ERROR_CODES } from "astro:actions";
 
 const projects = [
@@ -160,6 +170,23 @@ const projects = [
         collaborators: [
             { name: "Propp", link: "https://propp.it/" },
             { name: "Pietro Buffa", link: "https://pietrobuffa.it/" },
+        ]
+    },
+
+    {
+        Title: t("projects.13.Title"), 
+        Category: t("projects.13.Category"), 
+        year: t("projects.13.year"), 
+        images: [imgLodi1, imgLodi2, imgLodi3, imgLodi4, imgLodi5, imgLodi6, imgLodi8],
+        description: t("projects.13.description"),
+        link: "",
+        video: [
+            videoLodi,
+        ],
+        linkText: "",
+        collaborators: [
+            { name: "Luigi Farrauto", link: "https://x.com/centochilometri" },
+            { name: "100km studio", link: "https://100km.studio/" },
         ]
     },
 
