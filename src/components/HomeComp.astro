@@ -45,12 +45,12 @@ const { Title, num, year, Category, images = [], video = [], description, link, 
     <!-- border-t border-black -->
 
 <div class="grid grid-cols-2 md:grid-cols-12 info leading-tight ">
-        <p class="col-span-1 ">[{num}]</p>
+        <p class="col-span-1 tabular-nums tracking-tighter">[{num}]</p>
         <p class="col-span-1 md:col-span-8 cursor-pointer uppercase link" @click.prevent="openGallery = !openGallery">{Title}</p>
         <div class="col-span-1 md:hidden"></div>
         <p class="col-span-1 md:col-span-2">{Category}</p>
         <div class="col-span-1 md:hidden"></div>
-        <p class="col-span-1 md:justify-self-end">{year}</p>
+        <p class="col-span-1 md:justify-self-end tabular-nums tracking-tighter">{year}</p>
     </div>
 
     <!-- x-transition:enter="transition ease-out duration-500"
